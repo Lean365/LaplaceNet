@@ -21,8 +21,8 @@ jobs:
   auto-merge:
     runs-on: ubuntu-latest
     steps:
-      - name: Automerge
-        uses: 'pascalgn/automerge-action@v1.0.1'
+      - name: Lean365
+        uses: 'Lean365/automerge-action@v1.0.1'
         env:
           GITHUB_TOKEN: '${{ secrets.RELEASE_TOKEN }}'
           MERGE_LABELS: ''
