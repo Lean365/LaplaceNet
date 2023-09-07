@@ -1,0 +1,23 @@
+{
+  "pmenu": {
+    "menuName": "name",
+    "menuState": "status",
+    "icon": "icon",
+    "menuid": "id",
+    "menuType": "type",
+    "sort": "sort",
+    "authorityID": "authority",
+    "componentPath": "component",
+    "isShow": "isShow",
+    "parentMenu": "parentMenu",
+    "directory": "directory",
+    "menu": "menu",
+    "button": "button",
+    "link": "link",
+    "isFrame": "isFrame",
+    "routePath": "routePath",
+    "permissionStr": "permission",
+    "isCache": "isCache",
+    "menuNameKey": "menuKey"
+  }
+}

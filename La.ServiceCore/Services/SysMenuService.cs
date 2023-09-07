@@ -1,0 +1,712 @@
+using La.Infra.Attribute;
+using La.Infra.Extensions;
+using SqlSugar;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using La.Common;
+using La.Model.System;
+using La.Model.System.Dto;
+using La.Model.System.Enums;
+using La.Model.System.Generate;
+using La.Model.System.Vo;
+using La.Service.System.IService;
+
+namespace La.Service
+{
+    /// <summary>
+    /// 菜单
+    /// </summary>
+    [AppService(ServiceType = typeof(ISysMenuService), ServiceLifetime = LifeTime.Transient)]
+    public class SysMenuService : BaseService<SysMenu>, ISysMenuService
+    {
+        public ISysRoleService SysRoleService;
+
+        public SysMenuService(ISysRoleService sysRoleService)
+        {
+            SysRoleService = sysRoleService;
+        }
+
+        /// <summary>
+        /// 获取所有菜单数（菜单管理）
+        /// </summary>
+        /// <returns></returns>
+        public List<SysMenu> SelectTreeMenuList(MenuQueryDto menu, long userId)
+        {
+            if (menu.ParentId != null)
+            {
+                return GetMenusByMenuId(menu.ParentId.ParseToInt(), userId);
+            }
+            List<SysMenu> menuList = BuildMenuTree(SelectMenuList(menu, userId));
+            return menuList;
+        }
+
+        /// <summary>
+        /// 获取所有菜单列表
+        /// </summary>
+        /// <returns></returns>
+        public List<SysMenu> SelectMenuList(MenuQueryDto menu, long userId)
+        {
+            List<SysMenu> menuList;
+            if (SysRoleService.IsAdmin(userId))
+            {
+                menuList = SelectMenuList(menu);
+            }
+            else
+            {
+                var userRoles = SysRoleService.SelectUserRoles(userId);
+                menuList = SelectMenuListByRoles(menu, userRoles);
+            }
+            return menuList;
+        }
+
+        /// <summary>
+        /// 获取菜单详情
+        /// </summary>
+        /// <param name="menuId"></param>
+        /// <returns></returns>
+        public SysMenu GetMenuByMenuId(int menuId)
+        {
+            return GetFirst(it => it.MenuId == menuId);
+        }
+
+        /// <summary>
+        /// 根据菜单id获取菜单列表
+        /// </summary>
+        /// <param name="menuId"></param>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public List<SysMenu> GetMenusByMenuId(int menuId, long userId)
+        {
+            var menuExpression = Expressionable.Create<SysMenu>();
+            menuExpression.And(c => c.ParentId == menuId);
+
+            if (!SysRoleService.IsAdmin(userId))
+            {
+                var userRoles = SysRoleService.SelectUserRoles(userId);
+                var roleMenus = Context.Queryable<SysRoleMenu>()
+                    .Where(r => userRoles.Contains(r.Role_id)).Select(s => s.Menu_id).ToList();
+
+                menuExpression.And(c => roleMenus.Contains(c.MenuId));
+            }
+            var list = GetList(menuExpression.ToExpression()).OrderBy(f => f.OrderNum).ToList();
+            Context.ThenMapper(list, item =>
+            {
+                item.SubNum = Context.Queryable<SysMenu>().SetContext(x => x.ParentId, () => item.MenuId, item).Count;
+            });
+            return list;
+        }
+
+        /// <summary>
+        /// 添加菜单
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <returns></returns>
+        public long AddMenu(SysMenu menu)
+        {
+            menu.Create_time = DateTime.Now;
+            return InsertReturnBigIdentity(menu);
+        }
+
+        /// <summary>
+        /// 编辑菜单
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <returns></returns>
+        public long EditMenu(SysMenu menu)
+        {
+            menu.Icon = string.IsNullOrEmpty(menu.Icon) ? "" : menu.Icon;
+            return Update(menu, false);
+        }
+
+        /// <summary>
+        /// 删除菜单管理信息
+        /// </summary>
+        /// <param name="menuId"></param>
+        /// <returns></returns>
+        public int DeleteMenuById(int menuId)
+        {
+            return Delete(menuId);
+        }
+
+        /// <summary>
+        /// 校验菜单名称是否唯一
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <returns></returns>
+        public string CheckMenuNameUnique(SysMenu menu)
+        {
+            long menuId = menu.MenuId == 0 ? -1 : menu.MenuId;
+            SysMenu info = GetFirst(it => it.MenuName == menu.MenuName && it.ParentId == menu.ParentId);
+
+            //if (info != null && menuId != info.menuId && menu.menuName.Equals(info.menuName))
+            //{
+            //    return UserConstants.NOT_UNIQUE;
+            //}
+            if (info != null && info.MenuId != menu.MenuId)
+            {
+                return UserConstants.NOT_UNIQUE;
+            }
+            return UserConstants.UNIQUE;
+        }
+
+        /// <summary>
+        /// 菜单排序
+        /// </summary>
+        /// <param name="menuDto"></param>
+        /// <returns></returns>
+        public int ChangeSortMenu(MenuDto menuDto)
+        {
+            return Update(new SysMenu() { MenuId = menuDto.MenuId, OrderNum = menuDto.OrderNum }, it => new { it.OrderNum });
+        }
+
+        /// <summary>
+        /// 是否存在菜单子节点
+        /// </summary>
+        /// <param name="menuId"></param>
+        /// <returns></returns>
+        public bool HasChildByMenuId(long menuId)
+        {
+            return Count(it => it.ParentId == menuId) > 0;
+        }
+
+        /// <summary>
+        /// 获取左边导航栏菜单树
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public List<SysMenu> SelectMenuTreeByUserId(long userId)
+        {
+            MenuQueryDto dto = new() { IsStatus = "0", MenuTypeIds = "M,C" };
+            if (SysRoleService.IsAdmin(userId))
+            {
+                return SelectTreeMenuList(dto);
+            }
+            else
+            {
+                List<long> roleIds = SysRoleService.SelectUserRoles(userId);
+                return SelectTreeMenuListByRoles(dto, roleIds);
+            }
+        }
+
+        /// <summary>
+        /// 查询精确到按钮的操作权限
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public List<string> SelectMenuPermsByUserId(long userId)
+        {
+            var menus = Context.Queryable<SysMenu, SysRoleMenu, SysUserRole, SysRole>((m, rm, ur, r) => new JoinQueryInfos(
+                JoinType.Left, m.MenuId == rm.Menu_id,
+                JoinType.Left, rm.Role_id == ur.RoleId,
+                JoinType.Left, ur.RoleId == r.RoleId
+                ))
+                .WithCache(60 * 10)
+                .Where((m, rm, ur, r) => m.IsStatus == "0" && r.IsStatus == 0 && ur.UserId == userId)
+                .Select((m, rm, ur, r) => m).ToList();
+            var menuList = menus.Where(f => !string.IsNullOrEmpty(f.Perms));
+
+            return menuList.Select(x => x.Perms).Distinct().ToList();
+        }
+
+        /// <summary>
+        /// 根据用户查询系统菜单列表
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <param name="roles">用户角色集合</param>
+        /// <returns></returns>
+        public List<SysMenu> SelectTreeMenuListByRoles(MenuQueryDto menu, List<long> roles)
+        {
+            var roleMenus = Context.Queryable<SysRoleMenu>()
+                .Where(r => roles.Contains(r.Role_id))
+                .Select(f => f.Menu_id).Distinct().ToList();
+
+            return Queryable()
+                .Where(c => roleMenus.Contains(c.MenuId))
+                .WhereIF(!string.IsNullOrEmpty(menu.MenuName), (c) => c.MenuName.Contains(menu.MenuName))
+                .WhereIF(!string.IsNullOrEmpty(menu.Visible), (c) => c.Visible == menu.Visible)
+                .WhereIF(!string.IsNullOrEmpty(menu.IsStatus), (c) => c.IsStatus == menu.IsStatus)
+                .WhereIF(!string.IsNullOrEmpty(menu.MenuTypeIds), c => menu.MenuTypeIdArr.Contains(c.MenuType))
+                .OrderBy((c) => new { c.ParentId, c.OrderNum })
+                .Select(c => c)
+                .ToTree(it => it.Children, it => it.ParentId, 0);
+        }
+
+        /// <summary>
+        /// 根据用户查询系统菜单列表
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <param name="roleId">用户角色</param>
+        /// <returns></returns>
+        public List<RoleMenuExportDto> SelectRoleMenuListByRole(MenuQueryDto menu, int roleId)
+        {
+            var menuIds = Context.Queryable<SysRoleMenu>()
+                .Where(r => r.Role_id == roleId)
+                .Select(f => f.Menu_id).Distinct().ToList();
+
+            return Context.Queryable<SysMenu>()
+                .InnerJoin<SysMenu>((t1, t2) => t1.MenuId == t2.ParentId)
+                .InnerJoin<SysMenu>((t1, t2, t3) => t2.MenuId == t3.ParentId)
+                .Where((t1, t2, t3) => menuIds.Contains(t1.MenuId))
+                .Select((t1, t2, t3) => new RoleMenuExportDto()
+                {
+                    MenuName = $"{t1.MenuName}->{t2.MenuName}->{t3.MenuName}",
+                    Path = t2.Path,
+                    Component = t2.Component,
+                    Perms = t3.Perms,
+                    MenuType = (MenuType)(object)t3.MenuType,
+                    IsStatus = (MenuStatus)(object)t3.IsStatus
+                }).ToList();
+        }
+
+        /// <summary>
+        /// 获取所有菜单
+        /// </summary>
+        /// <returns></returns>
+        private List<SysMenu> SelectMenuList(MenuQueryDto menu)
+        {
+            var menuExp = Expressionable.Create<SysMenu>();
+            menuExp.AndIF(!string.IsNullOrEmpty(menu.MenuName), it => it.MenuName.Contains(menu.MenuName));
+            menuExp.AndIF(!string.IsNullOrEmpty(menu.Visible), it => it.Visible == menu.Visible);
+            menuExp.AndIF(!string.IsNullOrEmpty(menu.IsStatus), it => it.IsStatus == menu.IsStatus);
+            menuExp.AndIF(!string.IsNullOrEmpty(menu.MenuTypeIds), it => menu.MenuTypeIdArr.Contains(it.MenuType));
+            menuExp.AndIF(menu.ParentId != null, it => it.ParentId == menu.ParentId);
+
+            return Queryable()
+            .Where(menuExp.ToExpression())
+            .OrderBy(it => new { it.ParentId, it.OrderNum })
+            .ToList();
+        }
+
+        /// <summary>
+        /// 根据用户查询系统菜单列表
+        /// </summary>
+        /// <param name="sysMenu"></param>
+        /// <param name="roles">用户角色集合</param>
+        /// <returns></returns>
+        private List<SysMenu> SelectMenuListByRoles(MenuQueryDto sysMenu, List<long> roles)
+        {
+            var roleMenus = Context.Queryable<SysRoleMenu>()
+                .Where(r => roles.Contains(r.Role_id));
+
+            return Queryable()
+                .InnerJoin(roleMenus, (c, j) => c.MenuId == j.Menu_id)
+                .Where((c, j) => c.IsStatus == "0")
+                .WhereIF(!string.IsNullOrEmpty(sysMenu.MenuName), (c, j) => c.MenuName.Contains(sysMenu.MenuName))
+                .WhereIF(!string.IsNullOrEmpty(sysMenu.Visible), (c, j) => c.Visible == sysMenu.Visible)
+                .OrderBy((c, j) => new { c.ParentId, c.OrderNum })
+                .Select(c => c)
+                .ToList();
+        }
+
+        /// <summary>
+        /// 获取所有菜单（菜单管理）
+        /// </summary>
+        /// <returns></returns>
+        public List<SysMenu> SelectTreeMenuList(MenuQueryDto menu)
+        {
+            int parentId = menu.ParentId != null ? (int)menu.ParentId : 0;
+
+            var list = Queryable()
+                .WithCache(60 * 10)
+                .WhereIF(!string.IsNullOrEmpty(menu.MenuName), it => it.MenuName.Contains(menu.MenuName))
+                .WhereIF(!string.IsNullOrEmpty(menu.Visible), it => it.Visible == menu.Visible)
+                .WhereIF(!string.IsNullOrEmpty(menu.IsStatus), it => it.IsStatus == menu.IsStatus)
+                .WhereIF(!string.IsNullOrEmpty(menu.MenuTypeIds), it => menu.MenuTypeIdArr.Contains(it.MenuType))
+                .WhereIF(menu.ParentId != null, it => it.ParentId == menu.ParentId)
+                .OrderBy(it => new { it.ParentId, it.OrderNum })
+                .ToTree(it => it.Children, it => it.ParentId, parentId);
+
+            return list;
+        }
+        #region 方法
+
+        ///// <summary>
+        ///// 根据父节点的ID获取所有子节点
+        ///// </summary>
+        ///// <param name="list">分类表</param>
+        ///// <param name="parentId">传入的父节点ID</param>
+        ///// <returns></returns>
+        //public List<SysMenu> GetChildPerms(List<SysMenu> list, int parentId)
+        //{
+        //    List<SysMenu> returnList = new List<SysMenu>();
+        //    var data = list.FindAll(f => f.parentId == parentId);
+
+        //    foreach (var item in data)
+        //    {
+        //        RecursionFn(list, item);
+
+        //        returnList.Add(item);
+        //    }
+        //    return returnList;
+        //}
+
+        /// <summary>
+        /// 递归列表
+        /// </summary>
+        /// <param name="list"></param>
+        /// <param name="t"></param>
+        private void RecursionFn(List<SysMenu> list, SysMenu t)
+        {
+            //得到子节点列表
+            List<SysMenu> childList = GetChildList(list, t);
+            t.Children = childList;
+            foreach (var item in childList)
+            {
+                if (GetChildList(list, item).Count() > 0)
+                {
+                    RecursionFn(list, item);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 递归获取子菜单
+        /// </summary>
+        /// <param name="list">所有菜单</param>
+        /// <param name="sysMenu"></param>
+        /// <returns></returns>
+        private List<SysMenu> GetChildList(List<SysMenu> list, SysMenu sysMenu)
+        {
+            return list.Where(p => p.ParentId == sysMenu.MenuId).ToList();
+        }
+
+        /// <summary>
+        /// 获取路由侧边栏,动态生成
+        /// </summary>
+        /// <param name="menus"></param>
+        /// <returns></returns>
+        public List<RouterVo> BuildMenus(List<SysMenu> menus)
+        {
+            List<RouterVo> routers = new();
+            if (menus == null) return routers;
+
+            foreach (var menu in menus)
+            {
+                RouterVo router = new()
+                {
+                    Hidden = "1".Equals(menu.Visible),
+                    Name = GetRouteName(menu),
+                    Path = GetRoutePath(menu),
+                    Component = GetComponent(menu),
+                    Meta = new Meta(menu.MenuName, menu.Icon, "1".Equals(menu.IsCache), menu.MenuNameKey, menu.Path, menu.Create_time)
+                };
+
+                List<SysMenu> cMenus = menu.Children;
+                //是目录并且有子菜单
+                if (cMenus != null && cMenus.Count > 0 && UserConstants.TYPE_DIR.Equals(menu.MenuType))
+                {
+                    router.AlwaysShow = true;
+                    router.Redirect = "noRedirect";
+                    router.Children = BuildMenus(cMenus);
+                }
+                else if (IsMeunFrame(menu))
+                {
+                    router.Meta = null;
+                    List<RouterVo> childrenList = new();
+                    RouterVo children = new()
+                    {
+                        Path = menu.Path,
+                        Component = menu.Component,
+                        Name = string.IsNullOrEmpty(menu.Path) ? "" : menu.Path.ToLower(),
+                        Meta = new Meta(menu.MenuName, menu.Icon, "1".Equals(menu.IsCache), menu.MenuNameKey, menu.Path, menu.Create_time)
+                    };
+                    childrenList.Add(children);
+                    router.Children = childrenList;
+                }
+                else if (menu.ParentId == 0 && IsInnerLink(menu))
+                {
+                    router.Meta = new Meta(menu.MenuName, menu.Icon);
+                    router.Path = "/";
+                    List<RouterVo> childrenList = new();
+                    RouterVo children = new();
+                    string routerPath = InnerLinkReplaceEach(menu.Path);
+                    children.Path = routerPath;
+                    children.Component = UserConstants.INNER_LINK;
+                    children.Name = routerPath.ToLower();
+                    children.Meta = new Meta(menu.MenuName, menu.Icon, menu.Path);
+                    childrenList.Add(children);
+                    router.Children = childrenList;
+                }
+                routers.Add(router);
+            }
+
+            return routers;
+        }
+
+        /// <summary>
+        /// 构建前端所需要下拉树结构
+        /// </summary>
+        /// <param name="menus">菜单列表</param>
+        /// <returns>下拉树结构列表</returns>
+        public List<SysMenu> BuildMenuTree(List<SysMenu> menus)
+        {
+            List<SysMenu> returnList = new();
+            List<long> tempList = menus.Select(f => f.MenuId).ToList();
+
+            foreach (var menu in menus)
+            {
+                // 如果是顶级节点, 遍历该父节点的所有子节点
+                if (!tempList.Contains(menu.ParentId))
+                {
+                    RecursionFn(menus, menu);
+                    returnList.Add(menu);
+                }
+            }
+            if (!returnList.Any())
+            {
+                returnList = menus;
+            }
+            return returnList;
+        }
+
+        /// <summary>
+        /// 构建前端所需要下拉树结构
+        /// </summary>
+        /// <param name="menus"></param>
+        /// <returns></returns>
+        public List<TreeSelectVo> BuildMenuTreeSelect(List<SysMenu> menus)
+        {
+            List<SysMenu> menuTrees = BuildMenuTree(menus);
+            List<TreeSelectVo> treeMenuVos = new List<TreeSelectVo>();
+            foreach (var item in menuTrees)
+            {
+                treeMenuVos.Add(new TreeSelectVo(item));
+            }
+            return treeMenuVos;
+        }
+
+        /// <summary>
+        /// 获取路由名称
+        /// </summary>
+        /// <param name="menu">菜单信息</param>
+        /// <returns>路由名称</returns>
+        public string GetRouteName(SysMenu menu)
+        {
+            string routerName = menu.Path.ToLower();
+            // 非外链并且是一级目录（类型为目录）
+            if (IsMeunFrame(menu))
+            {
+                routerName = string.Empty;
+            }
+            return routerName;
+        }
+
+        /// <summary>
+        /// 获取路由路径
+        /// </summary>
+        /// <param name="menu">菜单信息</param>
+        /// <returns>路由地址</returns>
+        public string GetRoutePath(SysMenu menu)
+        {
+            string routerPath = menu.Path;
+            // 内链打开外网方式
+            if (menu.ParentId != 0 && IsInnerLink(menu))
+            {
+                routerPath = InnerLinkReplaceEach(routerPath);
+            }
+            // 非外链并且是一级目录（类型为目录）
+            if (0 == menu.ParentId && UserConstants.TYPE_DIR.Equals(menu.MenuType)
+                && UserConstants.NO_FRAME.Equals(menu.IsFrame))
+            {
+                routerPath = "/" + menu.Path;
+            }
+            else if (IsMeunFrame(menu))// 非外链并且是一级目录（类型为菜单）
+            {
+                routerPath = "/";
+            }
+            return routerPath;
+        }
+
+        /// <summary>
+        /// 获取组件名称
+        /// </summary>
+        /// <param name="menu"></param>
+        /// <returns></returns>
+        public string GetComponent(SysMenu menu)
+        {
+            string component = UserConstants.LAYOUT;
+            if (!string.IsNullOrEmpty(menu.Component) && !IsMeunFrame(menu))
+            {
+                component = menu.Component;
+            }
+            else if (menu.Component.IsEmpty() && menu.ParentId != 0 && IsInnerLink(menu))
+            {
+                component = UserConstants.INNER_LINK;
+            }
+            else if (string.IsNullOrEmpty(menu.Component) && IsParentView(menu))
+            {
+                component = UserConstants.PARENT_VIEW;
+            }
+            return component;
+        }
+
+        /// <summary>
+        /// 是否为菜单内部跳转
+        /// </summary>
+        /// <param name="menu">菜单信息</param>
+        /// <returns></returns>
+        public bool IsMeunFrame(SysMenu menu)
+        {
+            return menu.ParentId == 0 && UserConstants.TYPE_MENU.Equals(menu.MenuType)
+                && menu.IsFrame.Equals(UserConstants.NO_FRAME);
+        }
+
+        /// <summary>
+        /// 是否为内链组件
+        /// </summary>
+        /// <param name="menu">菜单信息</param>
+        /// <returns>结果</returns>
+        public bool IsInnerLink(SysMenu menu)
+        {
+            return menu.IsFrame.Equals(UserConstants.NO_FRAME) && Tools.IsUrl(menu.Path);
+        }
+
+        /// <summary>
+        /// 是否为parent_view组件
+        /// </summary>
+        /// <param name="menu">菜单信息</param>
+        /// <returns></returns>
+        public bool IsParentView(SysMenu menu)
+        {
+            return menu.ParentId != 0 && UserConstants.TYPE_DIR.Equals(menu.MenuType);
+        }
+
+        /// <summary>
+        /// 内链域名特殊字符替换
+        /// </summary>
+        /// <param name = "path" ></ param >
+        /// < returns ></ returns >
+        public string InnerLinkReplaceEach(string path)
+        {
+            return path.IsNotEmpty() ? path
+                .Replace(UserConstants.HTTP, "")
+                .Replace(UserConstants.HTTPS, "")
+                .Replace(UserConstants.WWW, "")
+                .Replace(".", "/") : path;
+        }
+        #endregion
+
+
+        public void AddSysMenu(GenTable genTableInfo, string permPrefix, bool showEdit, bool showExport, bool showImport)
+        {
+            var menu = GetFirst(f => f.MenuName == genTableInfo.FunctionName);
+            if (menu is null)
+            {
+                menu = new()
+                {
+                    MenuName = genTableInfo.FunctionName,
+                    ParentId = genTableInfo.Options.ParentMenuId,
+                    OrderNum = 0,
+                    Path = genTableInfo.BusinessName,
+                    Component = $"{genTableInfo.ModuleName.FirstLowerCase()}/{genTableInfo.BusinessName}",
+                    Perms = $"{permPrefix}:list",
+                    IsCache = "1",
+                    MenuType = "C",
+                    Visible = "0",
+                    IsStatus = "0",
+                    Icon = "icon1",
+                    Create_by = "system",
+                };
+                menu.MenuId = AddMenu(menu);
+            }
+
+            List<SysMenu> menuList = new();
+
+            SysMenu menuQuery = new()
+            {
+                MenuName = "查询",
+                ParentId = menu.MenuId,
+                OrderNum = 1,
+                Perms = $"{permPrefix}:query",
+                MenuType = "F",
+                Visible = "0",
+                IsStatus = "0",
+                Icon = "",
+            };
+            SysMenu menuAdd = new()
+            {
+                MenuName = "新增",
+                ParentId = menu.MenuId,
+                OrderNum = 2,
+                Perms = $"{permPrefix}:add",
+                MenuType = "F",
+                Visible = "0",
+                IsStatus = "0",
+                Icon = "",
+            };
+            SysMenu menuDel = new()
+            {
+                MenuName = "删除",
+                ParentId = menu.MenuId,
+                OrderNum = 3,
+                Perms = $"{permPrefix}:delete",
+                MenuType = "F",
+                Visible = "0",
+                IsStatus = "0",
+                Icon = "",
+            };
+
+            SysMenu menuEdit = new()
+            {
+                MenuName = "修改",
+                ParentId = menu.MenuId,
+                OrderNum = 4,
+                Perms = $"{permPrefix}:edit",
+                MenuType = "F",
+                Visible = "0",
+                IsStatus = "0",
+                Icon = "",
+            };
+
+            SysMenu menuExport = new()
+            {
+                MenuName = "导出",
+                ParentId = menu.MenuId,
+                OrderNum = 5,
+                Perms = $"{permPrefix}:export",
+                MenuType = "F",
+                Visible = "0",
+                IsStatus = "0",
+                Icon = "",
+            };
+
+            SysMenu menuImport = new()
+            {
+                MenuName = "导入",
+                ParentId = menu.MenuId,
+                OrderNum = 5,
+                Perms = $"{permPrefix}:import",
+                MenuType = "F",
+                Visible = "0",
+                IsStatus = "0",
+                Icon = "",
+            };
+
+            menuList.Add(menuQuery);
+            menuList.Add(menuAdd);
+            menuList.Add(menuDel);
+            if (showEdit)
+            {
+                menuList.Add(menuEdit);
+            }
+            if (showExport)
+            {
+                menuList.Add(menuExport);
+            }
+            if (showImport)
+            {
+                menuList.Add(menuImport);
+            }
+            //Insert(menuList);
+
+            var x = Context.Storageable(menuList)
+                .SplitInsert(it => !it.Any())
+                .SplitUpdate(it => !it.Any())
+                .WhereColumns(it => new { it.MenuName, it.ParentId })
+                .ToStorage();
+            x.AsInsertable.ExecuteCommand();//插入可插入部分;
+            x.AsUpdateable.ExecuteCommand();
+        }
+    }
+}

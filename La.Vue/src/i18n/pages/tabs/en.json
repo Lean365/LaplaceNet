@@ -1,0 +1,17 @@
+{
+  "ptabs": {
+    "basicInfo": "Basic",
+    "Onboarding": "Online",
+    "qualifications": "Qualifications",
+    "annex": "Annex",
+    "customization": "Customization",
+    "subInfo": "Subsidiary",
+    "content": "Content",
+    "trade": "Trade",
+    "bank": "Bank",
+    "contact": "Contact",
+    "purchase": "Purchasing",
+    "warehouse": "Inventory",
+    "accounting": "Accounting"
+  }
+}

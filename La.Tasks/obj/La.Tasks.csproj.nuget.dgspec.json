@@ -1,0 +1,544 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Tasks\\La.Tasks.csproj": {}
+  },
+  "projects": {
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Common\\La.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Common\\La.Common.csproj",
+        "projectName": "La.Common",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Common\\La.Common.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Aliyun.OSS.SDK.NetCore": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj",
+        "projectName": "La.Infra",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "AspectCore.Abstractions": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "CSRedisCore": {
+              "target": "Package",
+              "version": "[3.8.670, )"
+            },
+            "IPTools.China": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "JinianNet.JNTemplate": {
+              "target": "Package",
+              "version": "[2.3.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.Extensions.DependencyModel": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MiniExcel": {
+              "target": "Package",
+              "version": "[1.31.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "UAParser": {
+              "target": "Package",
+              "version": "[3.1.47, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj",
+        "projectName": "La.Model",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MiniExcel": {
+              "target": "Package",
+              "version": "[1.31.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "SqlSugarCoreNoDrive": {
+              "target": "Package",
+              "version": "[5.1.4.98, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Repository\\La.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Repository\\La.Repository.csproj",
+        "projectName": "La.Repository",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Repository\\La.Repository.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj"
+              },
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "SqlSugar.IOC": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "SqlSugarCoreNoDrive": {
+              "target": "Package",
+              "version": "[5.1.4.98, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.ServiceCore\\La.ServiceCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.ServiceCore\\La.ServiceCore.csproj",
+        "projectName": "La.ServiceCore",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.ServiceCore\\La.ServiceCore.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.ServiceCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Common\\La.Common.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Common\\La.Common.csproj"
+              },
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Infra\\La.Infra.csproj"
+              },
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Repository\\La.Repository.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Repository\\La.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "NETCore.Encrypt": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Service\\La.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Service\\La.Service.csproj",
+        "projectName": "La.Service",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Service\\La.Service.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.ServiceCore\\La.ServiceCore.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.ServiceCore\\La.ServiceCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\App Develop\\VS2023\\LaplaceNet\\La.Tasks\\La.Tasks.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Tasks\\La.Tasks.csproj",
+        "projectName": "La.Tasks",
+        "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Tasks\\La.Tasks.csproj",
+        "packagesPath": "C:\\Users\\Davis.Cheng\\.nuget\\packages\\",
+        "outputPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Tasks\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Davis.Cheng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Model\\La.Model.csproj"
+              },
+              "G:\\App Develop\\VS2023\\LaplaceNet\\La.Service\\La.Service.csproj": {
+                "projectPath": "G:\\App Develop\\VS2023\\LaplaceNet\\La.Service\\La.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.3, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
+            "Quartz.Serialization.Json": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

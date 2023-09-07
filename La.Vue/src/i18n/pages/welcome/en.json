@@ -1,0 +1,37 @@
+{
+  "WelcomeMessage": {
+    "Morning": "Good morning.",
+    "Forenoon": "Good morning.",
+    "Noon": "Good afternoon.",
+    "Afternoon": "Good afternoon.",
+    "Night": "Good evening."
+  },
+  "WelcomeContent": {
+    "ContentA": "🔸 Many hands make light work🔸",
+    "ContentB": "🔸 Strike while the iron is hot🔸",
+    "ContentC": "🔸 Honesty is the best policy🔸",
+    "ContentD": "🔸 The grass is always greener on the other side of the fence🔸",
+    "ContentE": "🔸 Don't judge a book by its cover🔸",
+    "ContentF": "🔸 An apple a day keeps the doctor away🔸",
+    "ContentG": "🔸 Better late than never🔸",
+    "ContentH": "🔸 Don't bite the hand that feeds you🔸",
+    "ContentI": "🔸 Rome wasn't built in a day🔸",
+    "ContentJ": "🔸 Actions speak louder than words🔸",
+    "ContentK": "🔸 It's no use crying over spilled milk🔸",
+    "ContentL": "🔸 Still waters run deep🔸",
+    "ContentM": "🔸 Curiosity killed the cat🔸",
+    "ContentN": "🔸 My hands are tied🔸",
+    "ContentO": "🔸 Out of sight, out of mind🔸",
+    "ContentP": "🔸 Easy come, easy go🔸",
+    "ContentQ": "🔸 You can't make an omelette without breaking a few eggs🔸",
+    "ContentR": "🔸 The forbidden fruit is always the sweetest🔸",
+    "ContentS": "🔸 If you scratch my back, I'll scratch yours🔸",
+    "ContentT": "🔸 It's the tip of the iceberg🔸",
+    "ContentU": "🔸 Learn to walk before you run🔸",
+    "ContentV": "🔸 First things first🔸",
+    "ContentW": "🔸 Don't bite off more than you can chew🔸",
+    "ContentX": "🔸 It's better to be safe than sorry🔸",
+    "ContentY": "🔸 The early bird catches the worm🔸",
+    "ContentZ": "🔸 Don’t make a mountain out of an anthill (or molehill)🔸"
+  }
+}

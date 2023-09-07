@@ -1,0 +1,42 @@
+{
+  "gen": {
+    "selecttable": "Please select the data table to generate code first",
+    "Generatingcode": "Generating...",
+    "Customizedpath": "Successfully generated to custom path",
+    "Codegenerationcompleted": "code generation completed!",
+    "ForcedSync": "Are you sure you want to forcibly synchronize the table structure of",
+    "TableStructure": "？",
+    "Syncsuccess": "Sync successful",
+    "completetable": "Please complete the table content first",
+    "Pleasewait": "Please wait a moment...",
+    "Permanentlydeleted": "This operation will permanently delete the file. Do you want to continue?",
+    "Undeleted": "Cancelled deletion",
+    "CodePreview": "CodePreview",
+    "basicInfo": "BasicInfo",
+    "genInfo": "GenInfo",
+    "cloumInfo": "FieldInfo",
+    "Submit": "Submit",
+    "Refresh": "Refresh",
+    "Return": "Return",
+    "Verificationfailed": "The form verification failed. Please recheck the submitted content",
+    "Lastline": "Last line",
+    "ImportTable": "Import Table",
+    "DataBase": "DataBase",
+    "TableName": "Name",
+    "TableDescription": "Description"
+  },
+  "pgen": {
+    "account": "ID",
+    "password": "Password",
+    "captcha": "Captcha",
+    "btnLogin": "Login",
+    "rememberMe": "Remember Me",
+    "loginSuccess": "login success",
+    "loginTimeOut": "Login status has expired, please log in again",
+    "reLogin": "re-register",
+    "invalidSession": "Invalid session, or session has expired, please log in again.",
+    "otherLoginWay": "Other",
+    "register": "Sign up now",
+    "forgotPwd": "forget"
+  }
+}

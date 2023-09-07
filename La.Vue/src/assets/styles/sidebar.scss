@@ -1,0 +1,106 @@
+#app {
+  .sidebar {
+    position: relative;
+    overflow-y: hidden;
+    z-index: 1001;
+    transition: width 0.28s ease;
+    background-color: var(--base-menu-background);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 2px 0 14px rgb(0 21 41 / 10%);
+    box-shadow: 2px 0 14px rgb(0 21 41 / 10%);
+
+    .el-scrollbar__bar.is-vertical {
+      right: 0px;
+    }
+    // 去掉el-menu边框
+    .el-menu {
+      border: none;
+    }
+
+    [class^='el-icon'] {
+      width: 1em;
+      height: 1em;
+      font-size: unset;
+    }
+  }
+
+  // 展开sidebar状态设置svg-icon边距
+  .openSidebar {
+    .sidebar {
+      transform: translate(0);
+    }
+    .sidebar .svg-icon {
+      margin-right: 5px;
+    }
+  }
+
+  // 隐藏侧边栏样式
+  .hideSidebar {
+    .el-aside {
+      --el-aside-width: 60px;
+    }
+    // 隐藏箭头
+    .el-sub-menu {
+      overflow: hidden;
+
+      & > .el-sub-menu__title {
+        .el-sub-menu__icon-arrow {
+          display: none;
+        }
+      }
+    }
+    // 折叠状态下
+    .el-menu--collapse {
+      [class^='el-icon'] {
+        width: auto;
+        font-size: medium;
+        margin-right: 0;
+      }
+      .el-sub-menu {
+        & > .el-sub-menu__title {
+          & > span {
+            height: 3000px;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  // mobile responsive
+  .mobile {
+    .main-container {
+      margin-left: 0px;
+    }
+
+    .sidebar {
+      transition: transform 0.28s;
+      position: fixed;
+      // background: var(--base-menu-background, #fff);
+    }
+
+    &.hideSidebar {
+      .sidebar {
+        display: none;
+      }
+    }
+  }
+}
+
+// when menu collapsed
+.el-menu--vertical {
+  // the scroll bar appears when the subMenu is too long
+  > .el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+﻿using System;
+using SqlSugar;
+using La.Infra.Attribute;
+using La.Infra.Extensions;
+using ${options.BaseNamespace}Model;
+using ${options.BaseNamespace}Model.System;
+using ${options.DtosNamespace};
+using ${options.ModelsNamespace}.${options.SubNamespace};
+using ${options.RepositoriesNamespace};
+using ${options.IServicsNamespace}.${options.SubNamespace}.I${options.SubNamespace}Service;
+using System.Linq;
+$if(genTable.TplCategory == "tree")
+using System.Collections.Generic;
+$end
+
+namespace ${options.ServicesNamespace}.${options.SubNamespace}
+{
+    /// <summary>
+    /// ${genTable.FunctionName}
+    /// Service业务层处理
+    /// @author ${replaceDto.Author}
+    /// @date ${replaceDto.AddTime}
+    /// </summary>
+    [AppService(ServiceType = typeof(I${replaceDto.ModelTypeName}Service), ServiceLifetime = LifeTime.Transient)]
+    public class ${replaceDto.ModelTypeName}Service : BaseService<${replaceDto.ModelTypeName}>, I${replaceDto.ModelTypeName}Service
+    {
+        /// <summary>
+        /// 查询${genTable.FunctionName}列表
+        /// </summary>
+        /// <param name="parm"></param>
+        /// <returns></returns>
+        public PagedInfo<${replaceDto.ModelTypeName}Dto> GetList(${replaceDto.ModelTypeName}QueryDto parm)
+        {
+            var predicate = Expressionable.Create<${replaceDto.ModelTypeName}>();
+
+$foreach(column in genTable.Columns)
+$if(column.IsQuery)
+$if(column.HtmlType == "selectMulti")
+            predicate = predicate.AndIF(parm.${column.CsharpField} != null, it => parm.${column.CsharpField}.Contains(it.${column.CsharpField}));
+$elseif(column.CsharpType == "string")
+            predicate = predicate.AndIF(!string.IsNullOrEmpty(parm.${column.CsharpField}), ${codeTool.QueryExp(column.CsharpField, column.QueryType)};
+$elseif(column.CsharpType == "DateTime")
+$if(column.HtmlType == "month")
+            DateTime monthEnd = Convert.ToDateTime(parm.${column.CsharpField}).AddMonths(1);
+            predicate = predicate.AndIF(parm.${column.CsharpField} != null, it => it.${column.CsharpField} >= parm.${column.CsharpField} && it.${column.CsharpField} < monthEnd);
+$else
+            //predicate = predicate.AndIF(parm.Begin${column.CsharpField} == null, it => it.${column.CsharpField} >= DateTime.Now.ToShortDateString().ParseToDateTime());
+            predicate = predicate.AndIF(parm.Begin${column.CsharpField} != null, it => it.${column.CsharpField} >= parm.Begin${column.CsharpField});
+            predicate = predicate.AndIF(parm.End${column.CsharpField} != null, it => it.${column.CsharpField} <= parm.End${column.CsharpField});
+$end
+$elseif(column.CsharpType == "int" || column.CsharpType == "long")
+            predicate = predicate.AndIF(parm.${column.CsharpField} != null, ${codeTool.QueryExp(column.CsharpField, column.QueryType)};
+$end
+$end
+$end
+            var response = Queryable()
+$if(null != genTable.SubTableName && "" != genTable.SubTableName)
+                //.Includes(x => x.${genTable.SubTable.ClassName}Nav) //填充子对象
+$end
+$if(genTable.Options.SortField != "" && genTable.Options.SortField != null)
+                //.OrderBy("${genTable.Options.SortField} ${genTable.Options.SortType}")
+$end
+                .Where(predicate.ToExpression())
+                .ToPage<${replaceDto.ModelTypeName}, ${replaceDto.ModelTypeName}Dto>(parm);
+
+            return response;
+        }
+
+$if(genTable.TplCategory == "tree")
+        /// <summary>
+        /// 查询${genTable.FunctionName}树列表
+        /// </summary>
+        /// <param name="parm"></param>
+        /// <returns></returns>
+        public List<${replaceDto.ModelTypeName}> GetTreeList(${replaceDto.ModelTypeName}QueryDto parm)
+        {
+            var predicate = Expressionable.Create<${replaceDto.ModelTypeName}>();
+
+$foreach(column in genTable.Columns)
+$if(column.IsQuery)
+$if(column.CsharpType == "string")
+            predicate = predicate.AndIF(!string.IsNullOrEmpty(parm.${column.CsharpField}), ${codeTool.QueryExp(column.CsharpField, column.QueryType)};
+$elseif(column.CsharpType == "int" || column.CsharpType == "long")
+            predicate = predicate.AndIF(parm.${column.CsharpField} != null, ${codeTool.QueryExp(column.CsharpField, column.QueryType)};
+$end
+$end
+$end
+
+            var response = Queryable()
+                .Where(predicate.ToExpression())
+                .ToTree(it => it.Children, it => it.${genTable.Options.TreeParentCode}, 0);
+
+            return response;
+        }
+$end
+        /// <summary>
+        /// 校验输入项目唯一性
+        /// </summary>
+        /// <param name="entryString"></param>
+        /// <returns></returns>
+        public string CheckEntryUnique(string entryString)
+        {
+            int count = Count(it => it.${replaceDto.PKName}.ToString() == entryString);
+            if (count > 0)
+            {
+                return UserConstants.NOT_UNIQUE;
+            }
+            return UserConstants.UNIQUE;
+        }
+
+        /// <summary>
+        /// 获取详情
+        /// </summary>
+        /// <param name="${replaceDto.PKName}"></param>
+        /// <returns></returns>
+        public ${replaceDto.ModelTypeName} GetInfo(${replaceDto.PKType} ${replaceDto.PKName})
+        {
+            var response = Queryable()
+$if(null != genTable.SubTableName && "" != genTable.SubTableName)
+                .Includes(x => x.${genTable.SubTable.ClassName}Nav) //填充子对象
+$end
+                .Where(x => x.${replaceDto.PKName} == ${replaceDto.PKName})
+                .First();
+
+            return response;
+        }
+
+        /// <summary>
+        /// 添加${genTable.FunctionName}
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public ${replaceDto.ModelTypeName} Add${replaceDto.ModelTypeName}(${replaceDto.ModelTypeName} model)
+        {
+$if(null != genTable.SubTableName && "" != genTable.SubTableName)
+            return Context.InsertNav(model).EnableDiffLogEvent("新增Nav${genTable.FunctionName}").Include(s1 => s1.${genTable.SubTable.ClassName}Nav).ExecuteReturnEntity();
+$else
+            return Context.Insertable(model).EnableDiffLogEvent("新增${genTable.FunctionName}").ExecuteReturnEntity();
+$end
+        }
+
+        /// <summary>
+        /// 修改${genTable.FunctionName}
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public int Update${replaceDto.ModelTypeName}(${replaceDto.ModelTypeName} model)
+        {
+            //var response = Update(w => w.${replaceDto.PKName} == model.${replaceDto.PKName}, it => new ${replaceDto.ModelTypeName}()
+            //{
+$foreach(item in genTable.Columns)
+$if((item.IsEdit))
+            //    $item.CsharpField = model.$item.CsharpField,
+$end
+${end}
+            //});
+            //return response;
+$if(null != genTable.SubTableName && "" != genTable.SubTableName)
+            return Context.UpdateNav(model).EnableDiffLogEvent("修改Nav${genTable.FunctionName}").Include(z1 => z1.${genTable.SubTable.ClassName}Nav).ExecuteCommand() ? 1 : 0;
+$else
+            return Update(model, true,model);
+$end
+        }
+$if(replaceDto.ShowBtnTruncate)
+        /// <summary>
+        /// 清空${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        public bool Truncate${replaceDto.ModelTypeName}()
+        {
+            var newTableName = $"${genTable.TableName}_{DateTime.Now:yyyyMMdd}";
+            if (Queryable().Any() && !Context.DbMaintenance.IsAnyTable(newTableName))
+            {
+                Context.DbMaintenance.BackupTable("${genTable.TableName}", newTableName);
+            }
+            
+            return Truncate();
+        }
+$end
+
+$if(replaceDto.ShowBtnImport)
+        /// <summary>
+        /// 导入${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        public (string, object, object) Import${replaceDto.ModelTypeName}(List<${replaceDto.ModelTypeName}> list)
+        {
+            var x = Context.Storageable(list)
+                .SplitInsert(it => !it.Any())
+$foreach(column in genTable.Columns)
+$if(column.IsRequired && column.IsIncrement == false)
+                .SplitError(x => x.Item.${column.CsharpField}.IsEmpty(), "${column.ColumnComment}不能为空")
+$end
+$end
+                //.WhereColumns(it => it.UserName)//如果不是主键可以这样实现（多字段it=>new{it.x1,it.x2}）
+                .ToStorage();
+            var result = x.AsInsertable.EnableDiffLogEvent("批量导入${genTable.FunctionName}").ExecuteCommand();//插入可插入部分;
+
+            string msg = $"插入{x.InsertList.Count} 更新{x.UpdateList.Count} 错误数据{x.ErrorList.Count} 不计算数据{x.IgnoreList.Count} 删除数据{x.DeleteList.Count} 总共{x.TotalList.Count}";                    
+            Console.WriteLine(msg);
+
+            //输出错误信息               
+            foreach (var item in x.ErrorList)
+            {
+                Console.WriteLine("错误" + item.StorageMessage);
+            }
+            foreach (var item in x.IgnoreList)
+            {
+                Console.WriteLine("忽略" + item.StorageMessage);
+            }
+
+            return (msg, x.ErrorList, x.IgnoreList);
+        }
+$end
+    }
+}

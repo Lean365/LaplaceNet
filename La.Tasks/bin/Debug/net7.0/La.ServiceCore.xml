@@ -1,0 +1,3771 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>La.ServiceCore</name>
+    </assembly>
+    <members>
+        <member name="T:La.Service.BaseService`1">
+            <summary>
+            基础服务定义
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:La.Service.IBaseService`1">
+            <summary>
+            基础服务定义
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:La.Service.System.ArticleCategoryService">
+            <summary>
+            文章目录Service业务层处理
+            </summary>
+        </member>
+        <member name="M:La.Service.System.ArticleCategoryService.GetList(La.Model.Dto.ArticleCategoryQueryDto)">
+            <summary>
+            查询文章目录列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.ArticleCategoryService.GetTreeList(La.Model.Dto.ArticleCategoryQueryDto)">
+            <summary>
+            查询文章目录树列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.ArticleCategoryService.AddArticleCategory(La.Model.System.ArticleCategory)">
+            <summary>
+            添加文章目录
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.ArticleService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:La.Service.System.ArticleService.GetList(La.Model.System.Dto.ArticleQueryDto)">
+            <summary>
+            查询文章管理列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.ArticleService.GetMyList(La.Model.System.Dto.ArticleQueryDto)">
+            <summary>
+            查询我的文章列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.ArticleService.UpdateArticle(La.Model.System.Article)">
+            <summary>
+            修改文章管理
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.CommonLangService">
+             <summary>
+             多语言配置Service业务层处理
+            
+             @author Lean365
+             @date 2022-05-06
+             </summary>
+        </member>
+        <member name="M:La.Service.System.CommonLangService.GetList(La.Model.Dto.CommonLangQueryDto)">
+            <summary>
+            查询多语言配置列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.CommonLangService.GetListToPivot(La.Model.Dto.CommonLangQueryDto)">
+            <summary>
+            行转列
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.CommonLangService.ImportCommonLang(System.Collections.Generic.List{La.Model.Models.CommonLang})">
+            <summary>
+            导入多语言设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.GenTableService">
+            <summary>
+            代码生成表
+            </summary>
+        </member>
+        <member name="M:La.Service.System.GenTableService.DeleteGenTableByIds(System.Int64[])">
+            <summary>
+            删除表
+            </summary>
+            <param name="tableIds">需要删除的表id</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.DelectDir(System.String,System.String)">
+            <summary>
+            查找并删除类
+            </summary>
+            <param name="srcPath"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:La.Service.System.GenTableService.DeleteGenTableByTbName(System.String)">
+            <summary>
+            删除表根据表名
+            </summary>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.GetGenTableInfo(System.Int64)">
+            <summary>
+            获取表信息
+            </summary>
+            <param name="tableId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.GetGenTableAll">
+            <summary>
+            获取所有代码生成表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.GetGenTables(La.Model.System.Generate.GenTable,La.Model.PagerInfo)">
+            <summary>
+            查询代码生成表信息
+            </summary>
+            <param name="genTable"></param>
+            <param name="pagerInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.ImportGenTable(La.Model.System.Generate.GenTable)">
+            <summary>
+            插入代码生成表
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.SelectDbTableListByNamess(System.String[])">
+            <summary>
+            获取表数据
+            </summary>
+            <param name="tableNames"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableService.SynchDb(System.Int64,La.Model.System.Generate.GenTable,System.Collections.Generic.List{La.Model.System.Generate.GenTableColumn})">
+            <summary>
+            同步数据库
+            </summary>
+            <param name="tableId">表id</param>
+            <param name="genTable"></param>
+            <param name="dbTableColumns">数据库表最新列初始化信息集合</param>
+        </member>
+        <member name="T:La.Service.System.GenTableColumnService">
+            <summary>
+            代码生成表列
+            </summary>
+        </member>
+        <member name="M:La.Service.System.GenTableColumnService.DeleteGenTableColumn(System.Int64)">
+            <summary>
+            删除表字段
+            </summary>
+            <param name="tableId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableColumnService.DeleteGenTableColumn(System.Int64[])">
+            <summary>
+            根据表id批量删除表字段
+            </summary>
+            <param name="tableId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableColumnService.DeleteGenTableColumnByTableName(System.String)">
+            <summary>
+            根据表名删除字段
+            </summary>
+            <param name="tableName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableColumnService.GenTableColumns(System.Int64)">
+            <summary>
+            获取表所有字段
+            </summary>
+            <param name="tableId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableColumnService.InsertGenTableColumn(System.Collections.Generic.List{La.Model.System.Generate.GenTableColumn})">
+            <summary>
+            插入表字段
+            </summary>
+            <param name="tableColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.GenTableColumnService.UpdateGenTableColumn(System.Collections.Generic.List{La.Model.System.Generate.GenTableColumn})">
+            <summary>
+            批量更新表字段
+            </summary>
+            <param name="tableColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.IArticleService.UpdateArticle(La.Model.System.Article)">
+            <summary>
+            修改文章管理
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.IService.ICommonLangService">
+             <summary>
+             多语言配置service接口
+            
+             @author Lean365
+             @date 2022-05-06
+             </summary>
+        </member>
+        <member name="T:La.Service.System.IService.ISysConfigService">
+             <summary>
+             参数配置service接口
+            
+             @author mr.zhao
+             @date 2021-09-29
+             </summary>
+        </member>
+        <member name="T:La.Service.System.IService.ISysDictService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:La.Service.System.IService.ISysDictService.CheckDictTypeUnique(La.Model.System.SysDictType)">
+            <summary>
+            校验字典类型称是否唯一
+            </summary>
+            <param name="dictType">字典类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysDictService.DeleteDictTypeByIds(System.Int64[])">
+            <summary>
+            批量删除字典数据信息
+            </summary>
+            <param name="dictIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysDictService.InsertDictType(La.Model.System.SysDictType)">
+            <summary>
+            插入字典类型
+            </summary>
+            <param name="sysDictType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysDictService.UpdateDictType(La.Model.System.SysDictType)">
+            <summary>
+            修改字典类型
+            </summary>
+            <param name="sysDictType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysDictService.GetInfo(System.Int64)">
+            <summary>
+            获取字典信息
+            </summary>
+            <param name="dictId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysFileService.SaveFileToLocal(System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="fileDir"></param>
+            <param name="fileName"></param>
+            <param name="formFile"></param>
+            <param name="rootPath"></param>
+            <param name="userName"></param>
+            <returns>文件对象</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysFileService.GetdirPath(System.String,System.Boolean)">
+            <summary>
+            按时间来创建文件夹
+            </summary>
+            <param name="path"></param>
+            <param name="byTimeStore"></param>
+            <returns>eg: 2020/11/3</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysFileService.HashFileName(System.String)">
+            <summary>
+            取文件名的MD5值(16位)
+            </summary>
+            <param name="str">文件名，不包括扩展名</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysLoginService.Login(La.Model.System.Dto.LoginBodyDto,La.Model.System.SysLogininfor)">
+            <summary>
+            登录
+            </summary>
+            <param name="loginBody"></param>
+            <param name="logininfor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysLoginService.GetLoginLog(La.Model.System.SysLogininfor,La.Model.PagerInfo)">
+            <summary>
+            查询操作日志
+            </summary>
+            <param name="logininfoDto"></param>
+            <param name="pager">分页</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysLoginService.AddLoginInfo(La.Model.System.SysLogininfor)">
+            <summary>
+            记录登录日志
+            </summary>
+            <param name="sysLogininfor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysLoginService.TruncateLogininfo">
+            <summary>
+            清空登录日志
+            </summary>
+        </member>
+        <member name="M:La.Service.System.IService.ISysLoginService.DeleteLogininforByIds(System.Int64[])">
+            <summary>
+            删除登录日志
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.IService.ISysRoleMenuService">
+            <summary>
+            角色菜单
+            </summary>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleMenuService.SelectRoleMenuByRoleId(System.Int64)">
+            <summary>
+            根据角色获取菜单id
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleMenuService.SelectRoleMenuByRoleIds(System.Int64[])">
+            <summary>
+            根据用户所有角色获取菜单
+            </summary>
+            <param name="roleIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleMenuService.AddRoleMenu(System.Collections.Generic.List{La.Model.System.SysRoleMenu})">
+            <summary>
+            批量插入用户菜单
+            </summary>
+            <param name="sysRoleMenus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleMenuService.DeleteRoleMenuByRoleId(System.Int64)">
+            <summary>
+            删除角色与菜单关联
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleMenuService.DeleteRoleMenuByRoleIdMenuIds(System.Int64,System.Int64[])">
+            <summary>
+            删除角色指定菜单
+            </summary>
+            <param name="roleId"></param>
+            <param name="menuIds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.IService.ISysNoticeService">
+             <summary>
+             通知公告表service接口
+            
+             @author Lean365
+             @date 2021-12-15
+             </summary>
+        </member>
+        <member name="M:La.Service.System.IService.ISysOperLogService.SelectOperLogList(La.Model.System.Dto.SysOperLogQueryDto)">
+            <summary>
+            查询系统操作日志集合
+            </summary>
+            <param name="operLog">操作日志对象</param>
+            <returns>操作日志集合</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysOperLogService.CleanOperLog">
+            <summary>
+            清空操作日志
+            </summary>
+        </member>
+        <member name="M:La.Service.System.IService.ISysOperLogService.DeleteOperLogByIds(System.Int64[])">
+            <summary>
+            批量删除系统操作日志
+            </summary>
+            <param name="operIds">需要删除的操作日志ID</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysOperLogService.SelectOperLogById(System.Int64)">
+            <summary>
+            查询操作日志详细
+            </summary>
+            <param name="operId">操作ID</param>
+            <returns>操作日志对象</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectRoleList(La.Model.System.SysRole,La.Model.PagerInfo)">
+            <summary>
+            根据条件分页查询角色数据
+            </summary>
+            <param name="role">角色信息</param>
+            <param name="pager"></param>
+            <returns>角色数据集合信息</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectRoleAll">
+            <summary>
+            查询所有角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectRolePermissionByUserId(System.Int64)">
+            <summary>
+            根据用户查询
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectRoleById(System.Int64)">
+            <summary>
+            通过角色ID查询角色
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns>角色对象信息</returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.DeleteRoleByRoleId(System.Int64[])">
+            <summary>
+            批量删除角色信息
+            </summary>
+            <param name="roleIds">需要删除的角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.UpdateRoleStatus(La.Model.System.SysRole)">
+            <summary>
+            更改角色权限状态
+            </summary>
+            <param name="roleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.CheckRoleKeyUnique(La.Model.System.SysRole)">
+            <summary>
+            校验角色权限是否唯一
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.CheckRoleAllowed(La.Model.System.SysRole)">
+            <summary>
+            校验角色是否允许操作
+            </summary>
+            <param name="role"></param>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.InsertRole(La.Model.System.SysRole)">
+            <summary>
+            新增保存角色信息
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.DeleteRoleMenuByRoleId(System.Int64)">
+            <summary>
+            通过角色ID删除角色和菜单关联
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.AuthDataScope(La.Model.System.Dto.SysRoleDto)">
+            <summary>
+            授权数据范围
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.InsertRoleMenu(La.Model.System.Dto.SysRoleDto)">
+            <summary>
+            新增角色菜单信息
+            </summary>
+            <param name="sysRoleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.IsAdmin(System.Int64)">
+            <summary>
+            判断是否是管理员
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectUserRoleMenus(System.Int64)">
+            <summary>
+            获取角色菜单id集合
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectUserRoleListByUserId(System.Int64)">
+            <summary>
+            获取用户角色列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectUserRoles(System.Int64)">
+            <summary>
+            获取用户权限集合
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.SelectUserRoleKeys(System.Int64)">
+            <summary>
+            获取用户权限字符串集合
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysRoleService.UpdateRole(La.Model.System.SysRole)">
+            <summary>
+            修改保存角色信息
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.IService.ISysSqldifflogService">
+            <summary>
+            数据差异日志service接口
+            </summary>
+        </member>
+        <member name="M:La.Service.System.IService.ISysTasksLogService.AddTaskLog(System.String,La.Model.System.SysTasksLog)">
+            <summary>
+            记录任务执行日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.DeleteUserRoleByUserId(System.Int32)">
+            <summary>
+            删除用户角色
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.DeleteRoleUserByUserIds(System.Int64,System.Collections.Generic.List{System.Int64})">
+            <summary>
+            批量删除角色对应用户
+            </summary>
+            <param name="roleId"></param>
+            <param name="userIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.AddUserRole(System.Collections.Generic.List{La.Model.System.SysUserRole})">
+            <summary>
+            添加用户角色
+            </summary>
+            <param name="sysUsers"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.GetSysUsersByRoleId(System.Int64)">
+            <summary>
+            获取用户数据根据角色id
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.GetSysUsersByRoleId(La.Model.System.Dto.RoleUserQueryDto)">
+            <summary>
+            获取用户数据根据角色id
+            </summary>
+            <param name="roleUserQueryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.GetExcludedSysUsersByRoleId(La.Model.System.Dto.RoleUserQueryDto)">
+            <summary>
+            获取尚未指派的用户数据根据角色id
+            </summary>
+            <param name="roleUserQueryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.InsertUserRole(La.Model.System.SysUser)">
+            <summary>
+            新增用户角色信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserRoleService.InsertRoleUser(La.Model.System.Dto.RoleUsersCreateDto)">
+            <summary>
+            新增加角色用户
+            </summary>
+            <param name="roleUsersCreateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.SelectUserById(System.Int64)">
+            <summary>
+            通过用户ID查询用户
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.CheckUserNameUnique(System.String)">
+            <summary>
+            校验用户名称是否唯一
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.InsertUser(La.Model.System.SysUser)">
+            <summary>
+            新增保存用户信息
+            </summary>
+            <param name="sysUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.UpdateUser(La.Model.System.SysUser)">
+            <summary>
+            修改用户信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.ResetPwd(System.Int64,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="userid"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.DeleteUser(System.Int64)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.UpdatePhoto(La.Model.System.SysUser)">
+            <summary>
+            修改用户头像
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.Register(La.Model.System.Dto.RegisterDto)">
+            <summary>
+            注册
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.IService.ISysUserService.ImportUsers(System.Collections.Generic.List{La.Model.System.SysUser})">
+            <summary>
+            导入
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SeedDataService">
+            <summary>
+            种子数据处理
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitUserData(System.Collections.Generic.List{La.Model.System.SysUser})">
+            <summary>
+            初始化用户数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitMenuData(System.Collections.Generic.List{La.Model.System.SysMenu})">
+            <summary>
+            菜单数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitRoleMenuData(System.Collections.Generic.List{La.Model.System.SysRoleMenu})">
+            <summary>
+            角色菜单数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitDeptData(System.Collections.Generic.List{La.Model.System.SysDept})">
+            <summary>
+            初始化部门数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitConfigData(System.Collections.Generic.List{La.Model.System.SysConfig})">
+            <summary>
+            系统配置
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitDictType(System.Collections.Generic.List{La.Model.System.SysDictType})">
+            <summary>
+            字典
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitDictData(System.Collections.Generic.List{La.Model.System.SysDictData})">
+            <summary>
+            字典数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitArticleCategoryData(System.Collections.Generic.List{La.Model.System.ArticleCategory})">
+            <summary>
+            文章目录
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitTaskData(System.Collections.Generic.List{La.Model.System.SysTasks})">
+            <summary>
+            任务
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SeedDataService.InitSeedData(System.String,System.Boolean)">
+            <summary>
+            初始化种子数据
+            </summary>
+            <param name="path"></param>
+            <param name="clean"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysConfigService">
+            <summary>
+            参数配置Service业务层处理
+            </summary>
+        </member>
+        <member name="T:La.Service.System.SysDeptService">
+            <summary>
+            部门管理
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.GetSysDepts(La.Model.System.Dto.SysDeptQueryDto)">
+            <summary>
+            查询部门管理数据
+            </summary>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.CheckDeptNameUnique(La.Model.System.SysDept)">
+            <summary>
+            校验部门名称是否唯一
+            </summary>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.InsertDept(La.Model.System.SysDept)">
+            <summary>
+            新增保存部门信息
+            </summary>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.UpdateDept(La.Model.System.SysDept)">
+            <summary>
+            修改保存部门信息
+            </summary>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.UpdateParentDeptStatusNormal(La.Model.System.SysDept)">
+            <summary>
+            修改该部门的父级部门状态
+            </summary>
+            <param name="dept">当前部门</param>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.UpdateDeptChildren(System.Int64,System.String,System.String)">
+            <summary>
+            修改子元素关系
+            </summary>
+            <param name="deptId">被修改的部门ID</param>
+            <param name="newAncestors">新的父ID集合</param>
+            <param name="oldAncestors">旧的父ID集合</param>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.GetChildrenDepts(System.Collections.Generic.List{La.Model.System.SysDept},System.Int64)">
+            <summary>
+            获取所有子部门
+            </summary>
+            <param name="depts"></param>
+            <param name="deptId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.BuildDeptTree(System.Collections.Generic.List{La.Model.System.SysDept})">
+            <summary>
+            构建前端所需要树结构
+            </summary>
+            <param name="depts">部门列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.BuildDeptTreeSelect(System.Collections.Generic.List{La.Model.System.SysDept})">
+            <summary>
+            构建前端所需下拉树结构
+            </summary>
+            <param name="depts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.RecursionFn(System.Collections.Generic.List{La.Model.System.SysDept},La.Model.System.SysDept)">
+            <summary>
+            递归列表
+            </summary>
+            <param name="list"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.GetChildList(System.Collections.Generic.List{La.Model.System.SysDept},La.Model.System.SysDept)">
+            <summary>
+            递归获取子菜单
+            </summary>
+            <param name="list">所有菜单</param>
+            <param name="dept"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.SelectRoleDeptByRoleId(System.Int64)">
+            <summary>
+            根据角色获取菜单id
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.SelectRoleDepts(System.Int64)">
+            <summary>
+            获取角色部门id集合
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.DeleteRoleDeptByRoleId(System.Int64)">
+            <summary>
+            删除角色部门数据
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDeptService.InsertRoleDepts(La.Model.System.SysRole)">
+            <summary>
+            批量插入角色部门
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysRoleDeptService">
+            <summary>
+            角色部门
+            </summary>
+        </member>
+        <member name="T:La.Service.System.SysDictDataService">
+            <summary>
+            字典数据类
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.SelectDictDataList(La.Model.System.SysDictData,La.Model.PagerInfo)">
+            <summary>
+            查询字典数据
+            </summary>
+            <param name="dictData"></param>
+            <param name="pagerInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.SelectDictDataByType(System.String)">
+            <summary>
+            根据字典类型查询
+            </summary>
+            <param name="dictType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.SelectDictDataById(System.Int64)">
+            <summary>
+            根据字典数据ID查询信息
+            </summary>
+            <param name="dictCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.InsertDictData(La.Model.System.SysDictData)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="dict"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.UpdateDictData(La.Model.System.SysDictData)">
+            <summary>
+            修改数据
+            </summary>
+            <param name="dict"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.DeleteDictDataByIds(System.Int64[])">
+            <summary>
+            批量删除字典数据信息
+            </summary>
+            <param name="dictCodes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.UpdateDictDataType(System.String,System.String)">
+            <summary>
+            同步修改字典类型
+            </summary>
+            <param name="old_dictType">旧字典类型</param>
+            <param name="new_dictType">新字典类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictDataService.SelectDictDataByCustomSql(La.Model.System.SysDictType)">
+            <summary>
+            根据字典类型查询自定义sql
+            </summary>
+            <param name="sysDictType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysDictService">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysDictService.SelectDictTypeList(La.Model.System.SysDictType,La.Model.PagerInfo)">
+            <summary>
+            查询字段类型列表
+            </summary>
+            <param name="dictType">实体模型</param>
+            <param name="pager"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictService.CheckDictTypeUnique(La.Model.System.SysDictType)">
+            <summary>
+            校验字典类型称是否唯一
+            </summary>
+            <param name="dictType">字典类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictService.DeleteDictTypeByIds(System.Int64[])">
+            <summary>
+            批量删除字典数据信息
+            </summary>
+            <param name="dictIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictService.InsertDictType(La.Model.System.SysDictType)">
+            <summary>
+            插入字典类型
+            </summary>
+            <param name="sysDictType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictService.UpdateDictType(La.Model.System.SysDictType)">
+            <summary>
+            修改字典类型
+            </summary>
+            <param name="sysDictType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictService.GetInfo(System.Int64)">
+            <summary>
+            获取字典信息
+            </summary>
+            <param name="dictId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysDictService.SelectDictDataByCustomSql(System.String)">
+            <summary>
+            根据字典类型查询自定义sql
+            </summary>
+            <param name="dictType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysFileService">
+            <summary>
+            文件管理
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysFileService.SaveFileToLocal(System.String,System.String,System.String,System.String,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            存储本地
+            </summary>
+            <param name="fileDir">存储文件夹</param>
+            <param name="rootPath">存储根目录</param>
+            <param name="fileName">自定文件名</param>
+            <param name="formFile">上传的文件流</param>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysFileService.SaveFileToAliyun(La.Model.System.SysFile,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            上传文件到阿里云
+            </summary>
+            <param name="file"></param>
+            <param name="formFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysFileService.GetdirPath(System.String,System.Boolean)">
+            <summary>
+            获取文件存储目录
+            </summary>
+            <param name="storePath"></param>
+            <param name="byTimeStore">是否按年月日存储</param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysLoginService">
+            <summary>
+            登录
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysLoginService.Login(La.Model.System.Dto.LoginBodyDto,La.Model.System.SysLogininfor)">
+            <summary>
+            登录验证
+            </summary>
+            <param name="logininfor"></param>
+            <param name="loginBody"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysLoginService.GetLoginLog(La.Model.System.SysLogininfor,La.Model.PagerInfo)">
+            <summary>
+            查询登录日志
+            </summary>
+            <param name="logininfoDto"></param>
+            <param name="pager">分页</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysLoginService.AddLoginInfo(La.Model.System.SysLogininfor)">
+            <summary>
+            记录登录日志
+            </summary>
+            <param name="sysLogininfor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysLoginService.TruncateLogininfo">
+            <summary>
+            清空登录日志
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysLoginService.DeleteLogininforByIds(System.Int64[])">
+            <summary>
+            删除登录日志
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysNoticeService">
+             <summary>
+             通知公告表Service业务层处理
+            
+             @author Lean365
+             @date 2021-12-15
+             </summary>
+        </member>
+        <member name="M:La.Service.System.SysNoticeService.GetSysNotices">
+            <summary>
+            查询系统通知
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysOperLogService">
+            <summary>
+            操作日志
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysOperLogService.InsertOperlog(La.Model.System.SysOperLog)">
+            <summary>
+            新增操作日志操作
+            </summary>
+            <param name="operLog">日志对象</param>
+        </member>
+        <member name="M:La.Service.System.SysOperLogService.SelectOperLogList(La.Model.System.Dto.SysOperLogQueryDto)">
+            <summary>
+            查询系统操作日志集合
+            </summary>
+            <param name="sysOper">操作日志对象</param>
+            <returns>操作日志集合</returns>
+        </member>
+        <member name="M:La.Service.System.SysOperLogService.CleanOperLog">
+            <summary>
+            清空操作日志
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysOperLogService.DeleteOperLogByIds(System.Int64[])">
+            <summary>
+            批量删除系统操作日志
+            </summary>
+            <param name="operIds">需要删除的操作日志ID</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:La.Service.System.SysOperLogService.SelectOperLogById(System.Int64)">
+            <summary>
+            查询操作日志详细
+            </summary>
+            <param name="operId">操作ID</param>
+            <returns>操作日志对象</returns>
+        </member>
+        <member name="T:La.Service.System.SysPermissionService">
+            <summary>
+            角色权限
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysPermissionService.GetRolePermission(La.Model.System.SysUser)">
+            <summary>
+            获取角色数据权限
+            </summary>
+            <param name="user">用户信息</param>
+            <returns>角色权限信息</returns>
+        </member>
+        <member name="M:La.Service.System.SysPermissionService.GetMenuPermission(La.Model.System.SysUser)">
+            <summary>
+            获取菜单数据权限
+            </summary>
+            <param name="user">用户信息</param>
+            <returns>菜单权限信息</returns>
+        </member>
+        <member name="T:La.Service.System.SysPostService">
+            <summary>
+            岗位管理
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysPostService.CheckPostCodeUnique(La.Model.System.SysPost)">
+            <summary>
+            校验岗位编码是否唯一
+            </summary>
+            <param name="post"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysPostService.CheckPostNameUnique(La.Model.System.SysPost)">
+            <summary>
+            校验岗位名称是否唯一
+            </summary>
+            <param name="post"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysRoleMenuService">
+            <summary>
+            角色菜单
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysRoleMenuService.SelectRoleMenuByRoleId(System.Int64)">
+            <summary>
+            根据角色获取菜单id
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysRoleMenuService.SelectRoleMenuByRoleIds(System.Int64[])">
+            <summary>
+            根据用户所有角色获取菜单
+            </summary>
+            <param name="roleIds"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysSqldifflogService">
+            <summary>
+            数据差异日志Service业务层处理
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysSqldifflogService.GetList(La.Model.System.Dto.SysSqldifflogQueryDto)">
+            <summary>
+            查询数据差异日志列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysSqldifflogService.GetInfo(System.Int64)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="PId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysSqldifflogService.AddSysSqldifflog(La.Model.System.SysSqldifflog)">
+            <summary>
+            添加数据差异日志
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysSqldifflogService.UpdateSysSqldifflog(La.Model.System.SysSqldifflog)">
+            <summary>
+            修改数据差异日志
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysTasksLogService">
+            <summary>
+            任务日志
+            </summary>
+        </member>
+        <member name="T:La.Service.System.SysTasksQzService">
+            <summary>
+            定时任务
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysTasksQzService.SelectTaskList(La.Model.System.Dto.TasksQueryDto)">
+            <summary>
+            查询任务
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysTasksQzService.AddTasks(La.Model.System.SysTasks)">
+            <summary>
+            添加任务
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysTasksQzService.UpdateTasks(La.Model.System.SysTasks)">
+            <summary>
+            更新任务
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysUserPostService">
+            <summary>
+            用户岗位
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysUserPostService.InsertUserPost(La.Model.System.SysUser)">
+            <summary>
+            新增用户岗位信息
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:La.Service.System.SysUserPostService.GetUserPostsByUserId(System.Int64)">
+            <summary>
+            查询用户岗位集合
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserPostService.GetPostsStrByUserId(System.Int64)">
+            <summary>
+            获取用户岗位
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserPostService.SelectPostsByUserId(System.Int64)">
+            <summary>
+            获取用户岗位
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.System.SysUserRoleService">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.CountUserRoleByRoleId(System.Int64)">
+            <summary>
+            通过角色ID查询角色使用数量
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.DeleteUserRoleByUserId(System.Int32)">
+            <summary>
+            删除用户角色
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.DeleteRoleUserByUserIds(System.Int64,System.Collections.Generic.List{System.Int64})">
+            <summary>
+            批量删除角色对应用户
+            </summary>
+            <param name="roleId"></param>
+            <param name="userIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.AddUserRole(System.Collections.Generic.List{La.Model.System.SysUserRole})">
+            <summary>
+            添加用户角色
+            </summary>
+            <param name="sysUserRoles"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.GetSysUsersByRoleId(System.Int64)">
+            <summary>
+            获取用户数据根据角色id
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.GetSysUsersByRoleId(La.Model.System.Dto.RoleUserQueryDto)">
+            <summary>
+            获取用户数据根据角色id
+            </summary>
+            <param name="roleUserQueryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.GetExcludedSysUsersByRoleId(La.Model.System.Dto.RoleUserQueryDto)">
+            <summary>
+            获取尚未指派的用户数据根据角色id
+            </summary>
+            <param name="roleUserQueryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.InsertUserRole(La.Model.System.SysUser)">
+            <summary>
+            新增用户角色信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.System.SysUserRoleService.InsertRoleUser(La.Model.System.Dto.RoleUsersCreateDto)">
+            <summary>
+            新增加角色用户
+            </summary>
+            <param name="roleUsersCreateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.SysMenuService">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectTreeMenuList(La.Model.System.Dto.MenuQueryDto,System.Int64)">
+            <summary>
+            获取所有菜单数（菜单管理）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectMenuList(La.Model.System.Dto.MenuQueryDto,System.Int64)">
+            <summary>
+            获取所有菜单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.GetMenuByMenuId(System.Int32)">
+            <summary>
+            获取菜单详情
+            </summary>
+            <param name="menuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.GetMenusByMenuId(System.Int32,System.Int64)">
+            <summary>
+            根据菜单id获取菜单列表
+            </summary>
+            <param name="menuId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.AddMenu(La.Model.System.SysMenu)">
+            <summary>
+            添加菜单
+            </summary>
+            <param name="menu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.EditMenu(La.Model.System.SysMenu)">
+            <summary>
+            编辑菜单
+            </summary>
+            <param name="menu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.DeleteMenuById(System.Int32)">
+            <summary>
+            删除菜单管理信息
+            </summary>
+            <param name="menuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.CheckMenuNameUnique(La.Model.System.SysMenu)">
+            <summary>
+            校验菜单名称是否唯一
+            </summary>
+            <param name="menu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.ChangeSortMenu(La.Model.System.Dto.MenuDto)">
+            <summary>
+            菜单排序
+            </summary>
+            <param name="menuDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.HasChildByMenuId(System.Int64)">
+            <summary>
+            是否存在菜单子节点
+            </summary>
+            <param name="menuId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectMenuTreeByUserId(System.Int64)">
+            <summary>
+            获取左边导航栏菜单树
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectMenuPermsByUserId(System.Int64)">
+            <summary>
+            查询精确到按钮的操作权限
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectTreeMenuListByRoles(La.Model.System.Dto.MenuQueryDto,System.Collections.Generic.List{System.Int64})">
+            <summary>
+            根据用户查询系统菜单列表
+            </summary>
+            <param name="menu"></param>
+            <param name="roles">用户角色集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectRoleMenuListByRole(La.Model.System.Dto.MenuQueryDto,System.Int32)">
+            <summary>
+            根据用户查询系统菜单列表
+            </summary>
+            <param name="menu"></param>
+            <param name="roleId">用户角色</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectMenuList(La.Model.System.Dto.MenuQueryDto)">
+            <summary>
+            获取所有菜单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectMenuListByRoles(La.Model.System.Dto.MenuQueryDto,System.Collections.Generic.List{System.Int64})">
+            <summary>
+            根据用户查询系统菜单列表
+            </summary>
+            <param name="sysMenu"></param>
+            <param name="roles">用户角色集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.SelectTreeMenuList(La.Model.System.Dto.MenuQueryDto)">
+            <summary>
+            获取所有菜单（菜单管理）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.RecursionFn(System.Collections.Generic.List{La.Model.System.SysMenu},La.Model.System.SysMenu)">
+            <summary>
+            递归列表
+            </summary>
+            <param name="list"></param>
+            <param name="t"></param>
+        </member>
+        <member name="M:La.Service.SysMenuService.GetChildList(System.Collections.Generic.List{La.Model.System.SysMenu},La.Model.System.SysMenu)">
+            <summary>
+            递归获取子菜单
+            </summary>
+            <param name="list">所有菜单</param>
+            <param name="sysMenu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.BuildMenus(System.Collections.Generic.List{La.Model.System.SysMenu})">
+            <summary>
+            获取路由侧边栏,动态生成
+            </summary>
+            <param name="menus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.BuildMenuTree(System.Collections.Generic.List{La.Model.System.SysMenu})">
+            <summary>
+            构建前端所需要下拉树结构
+            </summary>
+            <param name="menus">菜单列表</param>
+            <returns>下拉树结构列表</returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.BuildMenuTreeSelect(System.Collections.Generic.List{La.Model.System.SysMenu})">
+            <summary>
+            构建前端所需要下拉树结构
+            </summary>
+            <param name="menus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.GetRouteName(La.Model.System.SysMenu)">
+            <summary>
+            获取路由名称
+            </summary>
+            <param name="menu">菜单信息</param>
+            <returns>路由名称</returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.GetRoutePath(La.Model.System.SysMenu)">
+            <summary>
+            获取路由路径
+            </summary>
+            <param name="menu">菜单信息</param>
+            <returns>路由地址</returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.GetComponent(La.Model.System.SysMenu)">
+            <summary>
+            获取组件名称
+            </summary>
+            <param name="menu"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.IsMeunFrame(La.Model.System.SysMenu)">
+            <summary>
+            是否为菜单内部跳转
+            </summary>
+            <param name="menu">菜单信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.IsInnerLink(La.Model.System.SysMenu)">
+            <summary>
+            是否为内链组件
+            </summary>
+            <param name="menu">菜单信息</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:La.Service.SysMenuService.IsParentView(La.Model.System.SysMenu)">
+            <summary>
+            是否为parent_view组件
+            </summary>
+            <param name="menu">菜单信息</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:La.Service.SysMenuService.InnerLinkReplaceEach(System.String)" -->
+        <member name="T:La.Service.SysRoleService">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectRoleList(La.Model.System.SysRole,La.Model.PagerInfo)">
+            <summary>
+            根据条件分页查询角色数据
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <param name="pager">分页信息</param>
+            <returns>角色数据集合信息</returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectRoleAll">
+            <summary>
+            查询所有角色
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectRolePermissionByUserId(System.Int64)">
+            <summary>
+            根据用户查询
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectRoleById(System.Int64)">
+            <summary>
+            通过角色ID查询角色
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns>角色对象信息</returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.DeleteRoleByRoleId(System.Int64[])">
+            <summary>
+            批量删除角色信息
+            </summary>
+            <param name="roleIds">需要删除的角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.UpdateRoleStatus(La.Model.System.SysRole)">
+            <summary>
+            更改角色权限状态
+            </summary>
+            <param name="roleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.CheckRoleKeyUnique(La.Model.System.SysRole)">
+            <summary>
+            校验角色权限是否唯一
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.CheckRoleAllowed(La.Model.System.SysRole)">
+            <summary>
+            校验角色是否允许操作
+            </summary>
+            <param name="role"></param>
+        </member>
+        <member name="M:La.Service.SysRoleService.InsertRole(La.Model.System.SysRole)">
+            <summary>
+            新增保存角色信息
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.DeleteRoleMenuByRoleId(System.Int64)">
+            <summary>
+            通过角色ID删除角色和菜单关联
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.AuthDataScope(La.Model.System.Dto.SysRoleDto)">
+            <summary>
+            修改数据权限信息
+            </summary>
+            <param name="sysRoleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.InsertRoleMenu(La.Model.System.Dto.SysRoleDto)">
+            <summary>
+            批量新增角色菜单信息
+            </summary>
+            <param name="sysRoleDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.IsAdmin(System.Int64)">
+            <summary>
+            判断是否是管理员
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.IsRoleAdmin(System.Int64)">
+            <summary>
+            判断是否是管理员
+            </summary>
+            <param name="roleid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectUserRoleMenus(System.Int64)">
+            <summary>
+            获取角色菜单id集合
+            </summary>
+            <param name="roleId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectRoleMenuByRoleIds(System.Int64[])">
+            <summary>
+            根据用户所有角色获取菜单
+            </summary>
+            <param name="roleIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectUserRoleListByUserId(System.Int64)">
+            <summary>
+            获取用户角色列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectUserRoles(System.Int64)">
+            <summary>
+            获取用户权限集合
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectUserRoleKeys(System.Int64)">
+            <summary>
+            获取用户权限字符串集合
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.SelectUserRoleNames(System.Int64)">
+            <summary>
+            获取用户所有角色名
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.UpdateRole(La.Model.System.SysRole)">
+            <summary>
+            修改保存角色信息
+            </summary>
+            <param name="sysRole">角色信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysRoleService.UpdateSysRole(La.Model.System.SysRole)">
+            <summary>
+            修改用户角色
+            </summary>
+            <param name="sysRole"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.SysUserService">
+            <summary>
+            系统用户
+            </summary>
+        </member>
+        <member name="M:La.Service.SysUserService.SelectUserList(La.Model.System.Dto.SysUserQueryDto,La.Model.PagerInfo)">
+            <summary>
+            根据条件分页查询用户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.SelectUserById(System.Int64)">
+            <summary>
+            通过用户ID查询用户
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.CheckUserNameUnique(System.String)">
+            <summary>
+            校验用户名称是否唯一
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.InsertUser(La.Model.System.SysUser)">
+            <summary>
+            新增保存用户信息
+            </summary>
+            <param name="sysUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.UpdateUser(La.Model.System.SysUser)">
+            <summary>
+            修改用户信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.ResetPwd(System.Int64,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="userid"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.ChangeUserStatus(La.Model.System.SysUser)">
+            <summary>
+            修改用户状态
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.DeleteUser(System.Int64)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.UpdatePhoto(La.Model.System.SysUser)">
+            <summary>
+            修改用户头像
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.Register(La.Model.System.Dto.RegisterDto)">
+            <summary>
+            注册用户
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.CheckUserAllowed(La.Model.System.SysUser)">
+            <summary>
+            校验角色是否允许操作
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:La.Service.SysUserService.CheckUserDataScope(System.Int64,System.Int64)">
+            <summary>
+            校验用户是否有数据权限
+            </summary>
+            <param name="userid"></param>
+            <param name="loginUserId"></param>
+        </member>
+        <member name="M:La.Service.SysUserService.ImportUsers(System.Collections.Generic.List{La.Model.System.SysUser})">
+            <summary>
+            导入数据
+            </summary>
+            <param name="users"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.Login(La.Model.System.Dto.LoginBodyDto)">
+            <summary>
+            登录
+            </summary>
+            <param name="user">登录实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.SysUserService.UpdateLoginInfo(La.Model.System.Dto.LoginBodyDto,System.Int64)">
+            <summary>
+            修改登录信息
+            </summary>
+            <param name="user"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.ServiceCore.Middleware.ActionPermissionFilter">
+            <summary>
+            API授权判断
+            </summary>
+        </member>
+        <member name="P:La.ServiceCore.Middleware.ActionPermissionFilter.Permission">
+            <summary>
+            权限字符串，例如 system:user:view
+            </summary>
+        </member>
+        <member name="P:La.ServiceCore.Middleware.ActionPermissionFilter.RolePermi">
+            <summary>
+            角色字符串，例如 common,admin
+            </summary>
+        </member>
+        <member name="M:La.ServiceCore.Middleware.ActionPermissionFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            执行Action前校验是否有权限访问
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.ServiceCore.Middleware.GlobalActionMonitor.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext,Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate)">
+            <summary>
+            Action请求前
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.ServiceCore.Middleware.GlobalActionMonitor.OnResultExecuted(Microsoft.AspNetCore.Mvc.Filters.ResultExecutedContext)">
+            <summary>
+            OnActionExecuted是在Action中的代码执行之后运行的方法。
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:La.ServiceCore.Middleware.GlobalExceptionMiddleware">
+            <summary>
+            全局异常处理中间件
+            调用 app.UseMiddlewareGlobalExceptionMiddleware>();
+            </summary>
+        </member>
+        <member name="F:La.ServiceCore.SqlSugar.DataPermiEnum.All">
+            <summary>
+            全部数据权限
+            </summary>
+        </member>
+        <member name="F:La.ServiceCore.SqlSugar.DataPermiEnum.SELF">
+            <summary>
+            仅本人数据权限
+            </summary>
+        </member>
+        <member name="F:La.ServiceCore.SqlSugar.DataPermiEnum.DEPT">
+            <summary>
+            部门数据权限
+            </summary>
+        </member>
+        <member name="F:La.ServiceCore.SqlSugar.DataPermiEnum.CUSTOM">
+            <summary>
+            自定数据权限
+            </summary>
+        </member>
+        <member name="F:La.ServiceCore.SqlSugar.DataPermiEnum.DEPT_CHILD">
+            <summary>
+            部门及以下数据权限
+            </summary>
+        </member>
+        <member name="T:La.ServiceCore.SqlSugar.DataPermi">
+            <summary>
+            数据权限
+            </summary>
+        </member>
+        <member name="M:La.ServiceCore.SqlSugar.DataPermi.FilterData(System.Int32)">
+            <summary>
+            数据过滤
+            </summary>
+            <param name="configId">多库id</param>
+        </member>
+        <member name="T:La.ServiceCore.SqlSugar.InitTable">
+            <summary>
+            初始化表
+            </summary>
+        </member>
+        <member name="M:La.ServiceCore.SqlSugar.InitTable.InitDb">
+            <summary>
+            创建db、表
+            </summary>
+        </member>
+        <member name="M:La.ServiceCore.SqlSugar.SqlsugarSetup.AddDb(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            初始化db
+            </summary>
+            <param name="services"></param>
+            <param name="environment"></param>
+        </member>
+        <member name="M:La.ServiceCore.SqlSugar.SqlsugarSetup.SetSugarAop(SqlSugar.SqlSugarClient,SqlSugar.IOC.IocConfig,SqlSugar.ICacheService)">
+            <summary>
+            数据库Aop设置
+            </summary>
+            <param name="db"></param>
+            <param name="iocConfig"></param>
+            <param name="cache"></param>
+        </member>
+        <member name="T:La.WebApi.Filters.VerifyAttribute">
+            <summary>
+            授权校验访问
+            如果跳过授权登录在Action 或controller加上 AllowAnonymousAttribute
+            </summary>
+        </member>
+        <member name="M:La.WebApi.Filters.VerifyAttribute.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>
+            只判断token是否正确，不判断权限
+            如果需要判断权限的在Action上加上ApiActionPermission属性标识权限类别，ActionPermissionFilter作权限处理
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:La.Model.System.Article">
+            <summary>
+            文章表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.Cid">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.Title">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.CreateTime">
+            <summary>
+            发布时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.UpdateTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.Content">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.AuthorName">
+            <summary>
+            作者名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.UserId">
+            <summary>
+            发布者用户id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.IsStatus">
+            <summary>
+            文章状态 1、发布 2、草稿
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.FmtType">
+            <summary>
+            编辑器类型 markdown,html
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.Tags">
+            <summary>
+            文章标签eg：Net5,java
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.Hits">
+            <summary>
+            点击量
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.CoverUrl">
+            <summary>
+            封面地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Article.IsPublic">
+            <summary>
+            是否公开 1、公开 0、不公开
+            </summary>
+        </member>
+        <member name="T:La.Model.System.ArticleCategory">
+            <summary>
+            文章目录
+            </summary>
+        </member>
+        <member name="P:La.Model.System.ArticleCategory.CategoryId">
+            <summary>
+            目录id
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.ArticleDto">
+            <summary>
+            输入输出对象
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.GenTableDto.Params">
+            <summary>
+            额外参数
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.Params">
+            <summary>
+            额外参数
+            ****注意里面参数统一首字母小写*****
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.Params.CheckedBtn">
+            <summary>
+            额外参数字符串
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.GenTableColumnDto.HtmlType">
+            <summary>
+            显示类型（文本框、文本域、下拉框、复选框、单选框、日期控件）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.GenTableColumnDto.QueryType">
+            <summary>
+            查询类型（等于、不等于、大于、小于、范围）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.GenTableColumnDto.DictType">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.GenTableColumnDto.ReMarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.GenTableColumnDto.AutoFillType">
+            <summary>
+            自动填充类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.LoginBodyDto.Username">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.LoginBodyDto.Password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.LoginBodyDto.Code">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.LoginBodyDto.Uuid">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.ParentId">
+            <summary>
+            父菜单ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.OrderNum">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.Path">
+            <summary>
+            路由地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.Component">
+            <summary>
+            组件路径
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.IsCache">
+            <summary>
+            是否缓存（1缓存 0不缓存）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.IsFrame">
+            <summary>
+            是否外链 1、是 0、否
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.MenuType">
+            <summary>
+            类型（M目录 C菜单 F按钮 L链接）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.Visible">
+            <summary>
+            显示状态（0显示 1隐藏）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.IsStatus">
+            <summary>
+            菜单状态（0正常 1停用）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.Perms">
+            <summary>
+            权限字符串
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.Icon">
+            <summary>
+            菜单图标
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.MenuDto.MenuNameKey">
+            <summary>
+            翻译key
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RegisterDto.Username">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RegisterDto.Password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RegisterDto.Code">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RegisterDto.Uuid">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RegisterDto.Photo">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RoleMenuExportDto.MenuName">
+            <summary>
+            一级目录名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RoleUsersCreateDto.RoleId">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.RoleUsersCreateDto.UserIds">
+            <summary>
+            用户编码 [1,2,3,4] 
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysConfigDto">
+            <summary>
+            参数配置输入对象模型
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysConfigQueryDto">
+            <summary>
+            参数配置查询对象模型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysdictDataDto.ReMarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysDictTypeDto.DictName">
+            <summary>
+            字典名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysDictTypeDto.DictType">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysDictTypeDto.Type">
+            <summary>
+            系统内置 Y是 N否
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysDictTypeDto.ReMarks">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysDictTypeDto.CustomSql">
+            <summary>
+            自定义sql
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysFileDto">
+            <summary>
+            文件存储输入对象
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.RealName">
+            <summary>
+            文件原名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.FileType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.FileName">
+            <summary>
+            存储文件名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.FileUrl">
+            <summary>
+            文件存储地址 eg：/uploads/20220202
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.StorePath">
+            <summary>
+            仓库位置 eg：/uploads
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.FileExt">
+            <summary>
+            文件扩展名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.Create_by">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.Create_time">
+            <summary>
+            上传时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.StoreType">
+            <summary>
+            存储类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysFileDto.AccessUrl">
+            <summary>
+            访问路径
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysLogininfoDto.Ipaddr">
+            <summary>
+            IP 地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysLogininfoDto.IsStatus">
+            <summary>
+            登录状态 0成功 1失败
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysLogininfoDto.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysNoticeDto">
+            <summary>
+            通知公告表输入对象
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysNoticeQueryDto">
+            <summary>
+            通知公告表查询对象
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogQueryDto.OperName">
+            <summary>
+            操作人员
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogQueryDto.BusinessType">
+            <summary>
+            业务类型 0=其它,1=新增,2=修改,3=删除,4=授权,5=导出,6=导入,7=强退,8=生成代码,9=清空数据
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogQueryDto.IsStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogQueryDto.Title">
+            <summary>
+            操作模块
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogQueryDto.OperParam">
+            <summary>
+            请求参数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogDto.PageNum">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogDto.OperName">
+            <summary>
+            操作人员
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogDto.BusinessType">
+            <summary>
+            业务类型 0=其它,1=新增,2=修改,3=删除,4=授权,5=导出,6=导入,7=强退,8=生成代码,9=清空数据
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogDto.IsStatus">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogDto.Title">
+            <summary>
+            操作模块
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysOperLogDto.OperParam">
+            <summary>
+            请求参数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysRoleDto.MenuIds">
+            <summary>
+            要添加的菜单集合
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysRoleDto.DelMenuIds">
+            <summary>
+            减少菜单集合
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysRoleMenuDto.MenuIds">
+            <summary>
+            角色分配菜单
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysSqldifflogQueryDto">
+            <summary>
+            数据差异日志查询对象
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.SysSqldifflogDto">
+            <summary>
+            数据差异日志输入输出对象
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysUserDto.Sex">
+            <summary>
+            用户性别（0男 1女 2未知）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.SysUserQueryDto.Sex">
+            <summary>
+            用户性别（0男 1女 2未知）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksQueryDto.QueryText">
+            <summary>
+            查询字符串
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Dto.TasksCreateDto">
+            <summary>
+            添加任务
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.ID">
+            <summary>
+            任务id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.Name">
+            <summary>
+            任务名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.JobGroup">
+            <summary>
+            任务分组
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.Cron">
+            <summary>
+            运行时间表达式
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.AssemblyName">
+            <summary>
+            程序集名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.ClassName">
+            <summary>
+            任务所在类
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.ReMarks">
+            <summary>
+            任务描述
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.BeginTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.TriggerType">
+            <summary>
+            触发器类型（0、simple 1、cron）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.IntervalSecond">
+            <summary>
+            执行间隔时间(单位:秒)
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.JobParams">
+            <summary>
+            传入参数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.TaskType">
+            <summary>
+            1、程序集任务 2、apiUrl任务 3、SQL语句
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.SqlText">
+            <summary>
+            SQL文本
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksCreateDto.RequestMethod">
+            <summary>
+            网络请求方式
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Dto.TasksLogQueryDto.Name">
+            <summary>
+            查询字符串
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Enums.MenuStatus">
+            <summary>
+            菜单状态（0正常 1停用）
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Enums.MenuType">
+            <summary>
+            M目录 C菜单 F按钮 L链接
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Generate.GenTable">
+            <summary>
+            代码生成表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.TableId">
+            <summary>
+            表id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.DbName">
+            <summary>
+            数据库名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.TableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.TableComment">
+            <summary>
+            表描述
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.SubTableName">
+            <summary>
+            关联父表的表名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.SubTableFkName">
+            <summary>
+            本表关联父表的外键名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.ClassName">
+            <summary>
+            csharp类名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.TplCategory">
+            <summary>
+            使用的模板（crud单表操作 tree树表操作 sub主子表操作）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.BaseNameSpace">
+            <summary>
+            基本命名空间前缀
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.ModuleName">
+            <summary>
+            生成模块名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.BusinessName">
+            <summary>
+            生成业务名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.FunctionName">
+            <summary>
+            生成功能名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.FunctionAuthor">
+            <summary>
+            生成作者名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.GenType">
+            <summary>
+            生成代码方式（0zip压缩包 1自定义路径）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.GenPath">
+            <summary>
+            代码生成保存路径
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.Options">
+            <summary>
+            其他生成选项
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.Columns">
+            <summary>
+            表列信息
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTable.SubTable">
+            <summary>
+            字表信息
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.Options.CheckedBtn">
+            <summary>
+            额外参数字符串
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.Options.ColNum">
+            <summary>
+            列大小 12,24
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.Options.GenerateRepo">
+            <summary>
+            是否生成仓储层
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.Options.GenerateMenu">
+            <summary>
+            自动生成菜单
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.Options.OperBtnStyle">
+            <summary>
+            操作按钮样式
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Generate.GenTableColumn">
+            <summary>
+            代码生成表字段
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.ColumnId">
+            <summary>
+            列id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.ColumnName">
+            <summary>
+            导入代码生成表列名 首字母转了小写
+            </summary>
+        </member>
+        <member name="F:La.Model.System.Generate.GenTableColumn.columnComment">
+            <summary>
+            列说明
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.ColumnType">
+            <summary>
+            数据库列类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.CsharpType">
+            <summary>
+            C#类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.CsharpField">
+            <summary>
+            C# 字段名 首字母大写
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsPk">
+            <summary>
+            是否主键（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsRequired">
+            <summary>
+            是否必填（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsIncrement">
+            <summary>
+            是否自增（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsInsert">
+            <summary>
+            是否插入（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsEdit">
+            <summary>
+            是否需要编辑（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsList">
+            <summary>
+            是否显示列表（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsQuery">
+            <summary>
+            是否查询（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsSort">
+            <summary>
+            是否排序（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.IsExport">
+            <summary>
+            是否导出（1是）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.HtmlType">
+            <summary>
+            显示类型（文本框、文本域、下拉框、复选框、单选框、日期控件）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.QueryType">
+            <summary>
+            查询类型（等于、不等于、大于、小于、范围）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.DictType">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.AutoFillType">
+            <summary>
+            自动填充类型 1、添加 2、编辑 3、添加编辑
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.SortStr">
+            <summary>
+            前端排序字符串
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.CsharpFieldFl">
+            <summary>
+            C# 字段名 首字母小写，用于前端
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Generate.GenTableColumn.DisabledStr">
+            <summary>
+            前端 只读字段
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysBase.Create_by">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysBase.Create_time">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysBase.Update_by">
+            <summary>
+            更新人
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysBase.Update_time">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysConfig">
+             <summary>
+             参数配置，数据实体对象
+            
+             @author mr.zhao
+             @date 2021-09-29
+             </summary>
+        </member>
+        <member name="P:La.Model.System.SysConfig.ConfigId">
+            <summary>
+            配置id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysConfig.ConfigName">
+            <summary>
+            参数名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysConfig.ConfigKey">
+            <summary>
+            参数键名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysConfig.ConfigValue">
+            <summary>
+            参数键值
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysConfig.ConfigType">
+            <summary>
+            系统内置（Y是 N否）
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysDept">
+            <summary>
+            部门表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.DeptId">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.ParentId">
+            <summary>
+            父部门ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.Ancestors">
+            <summary>
+            祖级列表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.DeptName">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.OrderNum">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.Leader">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.Phone">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.Email">
+            <summary>
+            邮箱
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.IsStatus">
+            <summary>
+            部门状态:0正常,1停用
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDept.IsDeleted">
+            <summary>
+            删除标志（0代表存在 2代表删除）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.SysDept.children">
+            <summary>
+            子菜单
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysDictData">
+            <summary>
+            字典数据表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.DictCode">
+            <summary>
+            字典编码
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.DictSort">
+            <summary>
+            字典排序
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.DictLabel">
+            <summary>
+            字典标签
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.DictValue">
+            <summary>
+            字典键值
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.DictType">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.CssClass">
+            <summary>
+            样式属性（其他样式扩展）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.ListClass">
+            <summary>
+            表格回显样式
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.IsDefault">
+            <summary>
+            是否默认（Y是 N否）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictData.IsStatus">
+            <summary>
+            状态（0正常 1停用）
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysDictType">
+            <summary>
+            字典类型表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictType.DictId">
+            <summary>
+            字典主键
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictType.DictName">
+            <summary>
+            字典名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictType.DictType">
+            <summary>
+            字典类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictType.IsStatus">
+            <summary>
+            状态 0、正常 1、停用
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictType.Type">
+            <summary>
+            系统内置 Y是 N否
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysDictType.CustomSql">
+            <summary>
+            自定义sql
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.Id">
+            <summary>
+            自增id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.RealName">
+            <summary>
+            文件原名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.FileType">
+            <summary>
+            文件类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.FileName">
+            <summary>
+            存储文件名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.FileUrl">
+            <summary>
+            文件存储地址 eg：/uploads/20220202
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.StorePath">
+            <summary>
+            仓库位置 eg：/uploads
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.FileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.FileExt">
+            <summary>
+            文件扩展名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.Create_by">
+            <summary>
+            创建人
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.Create_time">
+            <summary>
+            上传时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.StoreType">
+            <summary>
+            存储类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysFile.AccessUrl">
+            <summary>
+            访问路径
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysLogininfor">
+            <summary>
+            sys_logininfor 表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.UserName">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.IsStatus">
+            <summary>
+            登录状态 0成功 1失败
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.Ipaddr">
+            <summary>
+            登录IP地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.LoginLocation">
+            <summary>
+            登录地点
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.Browser">
+            <summary>
+            浏览器类型
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.Os">
+            <summary>
+            操作系统
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.Msg">
+            <summary>
+            提示消息
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysLogininfor.LoginTime">
+            <summary>
+            访问时间
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysMenu">
+            <summary>
+            Sys_menu表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.MenuId">
+            <summary>
+            菜单ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.MenuName">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.ParentId">
+            <summary>
+            父菜单ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.OrderNum">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.Path">
+            <summary>
+            路由地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.Component">
+            <summary>
+            组件路径
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.IsCache">
+            <summary>
+            是否缓存（1缓存 0不缓存）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.IsFrame">
+            <summary>
+            是否外链 1、是 0、否
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.MenuType">
+            <summary>
+            类型（M目录 C菜单 F按钮 L链接）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.Visible">
+            <summary>
+            显示状态（0显示 1隐藏）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.IsStatus">
+            <summary>
+            菜单状态（0正常 1停用）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.Perms">
+            <summary>
+            权限字符串
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.Icon">
+            <summary>
+            菜单图标
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.MenuNameKey">
+            <summary>
+            菜单名key
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.Children">
+            <summary>
+            子菜单
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.SubNum">
+            <summary>
+            子菜单个数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysMenu.HasChildren">
+            <summary>
+            是否包含子节点，前端用
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysNotice">
+             <summary>
+             通知公告表
+            
+             @author Lean365
+             @date 2021-12-15
+             </summary>
+        </member>
+        <member name="P:La.Model.System.SysNotice.NoticeId">
+            <summary>
+            公告ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysNotice.NoticeTitle">
+            <summary>
+            公告标题
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysNotice.NoticeType">
+            <summary>
+            公告类型 (1通知 2公告)
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysNotice.NoticeContent">
+            <summary>
+            公告内容
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysNotice.IsStatus">
+            <summary>
+            公告状态 (0正常 1关闭)
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperId">
+            <summary>
+            操作id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.Title">
+            <summary>
+            操作模块
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.BusinessType">
+            <summary>
+            业务类型（0其它 1新增 2修改 3删除 4=授权,5=导出,6=导入,7=强退,8=生成代码,9=清空数据）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.BusinessTypes">
+            <summary>
+            业务类型数组
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.Method">
+            <summary>
+            请求方法
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.RequestMethod">
+            <summary>
+            请求方式
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperatorType">
+            <summary>
+            操作类别（0其它 1后台用户 2手机端用户）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperName">
+            <summary>
+            操作人员
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperUrl">
+            <summary>
+            请求url
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperIp">
+            <summary>
+            操作地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperLocation">
+            <summary>
+            操作地点
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperParam">
+            <summary>
+            请求参数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.JsonResult">
+            <summary>
+            返回参数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.IsStatus">
+            <summary>
+            操作状态（0正常 1异常）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.ErrorMsg">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.OperTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysOperLog.Elapsed">
+            <summary>
+            操作用时
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysPost.PostId">
+            <summary>
+            岗位Id
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysRole">
+            <summary>
+            角色表 sys_role
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.RoleKey">
+            <summary>
+            角色权限
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.RoleSort">
+            <summary>
+            角色排序
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.IsStatus">
+            <summary>
+            帐号状态（0正常 1停用）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.IsDeleted">
+            <summary>
+            删除标志（0代表存在 2代表删除）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.DataScope">
+            <summary>
+            数据范围（1：全部数据权限 2：自定数据权限 3：本部门数据权限 4：本部门及以下数据权限））
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.MenuCheckStrictly">
+            <summary>
+            菜单树选择项是否关联显示
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.DeptCheckStrictly">
+            <summary>
+            部门树选择项是否关联显示
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.MenuIds">
+            <summary>
+            菜单组
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.DeptIds">
+            <summary>
+            部门组（数据权限）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysRole.UserNum">
+            <summary>
+            用户个数
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysRoleMenu">
+            <summary>
+            角色菜单
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.PId">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.TableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.BusinessData">
+            <summary>
+            业务数据内容
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.DiffType">
+            <summary>
+            差异类型insert，update，delete
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.Sql">
+            <summary>
+            执行sql语句
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.BeforeData">
+            <summary>
+            变更前数据
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.AfterData">
+            <summary>
+            变更后数据
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.UserName">
+            <summary>
+            操作用户名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysSqldifflog.ConfigId">
+            <summary>
+            数据库配置id
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysTasks">
+            <summary>
+            计划任务
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.ID">
+            <summary>
+            任务id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.Name">
+            <summary>
+            任务名称 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.JobGroup">
+            <summary>
+            任务分组 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.Cron">
+            <summary>
+            运行时间表达式 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.AssemblyName">
+            <summary>
+            程序集名称 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.ClassName">
+            <summary>
+            任务所在类 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.RunTimes">
+            <summary>
+            执行次数 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.BeginTime">
+            <summary>
+            开始时间 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.EndTime">
+            <summary>
+            结束时间 
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.TriggerType">
+            <summary>
+            触发器类型（0、simple 1、cron） 
+            默认 : 1
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.IntervalSecond">
+            <summary>
+            执行间隔时间(单位:秒) 
+            默认 : 0
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.IsStart">
+            <summary>
+            是否启动
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.JobParams">
+            <summary>
+            传入参数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.LastRunTime">
+            <summary>
+            最后运行时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.ApiUrl">
+            <summary>
+            api执行地址
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.TaskType">
+            <summary>
+            任务类型 1、程序集 2、网络请求 3、SQL语句
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.SqlText">
+            <summary>
+            SQL语句
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasks.RequestMethod">
+            <summary>
+            网络请求方式
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysTasksLog">
+            <summary>
+            任务日志
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.JobLogId">
+            <summary>
+            日志Id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.JobId">
+            <summary>
+            任务Id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.JobName">
+            <summary>
+            任务名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.JobGroup">
+            <summary>
+            任务分组
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.IsStatus">
+            <summary>
+            执行状态（0正常 1失败）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.Exception">
+            <summary>
+            异常
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.JobMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.InvokeTarget">
+            <summary>
+            调用目标字符串
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysTasksLog.Elapsed">
+            <summary>
+            执行用时，毫秒
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysUser">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.UserName">
+            <summary>
+            登录用户名
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.NickName">
+            <summary>
+            用户昵称
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.UserType">
+            <summary>
+            用户类型（00系统用户）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.Phonenumber">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.Sex">
+            <summary>
+            用户性别（0男 1女 2未知）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.IsStatus">
+            <summary>
+            帐号状态（0正常 1停用）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.IsDeleted">
+            <summary>
+            删除标志（0代表存在 2代表删除）
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.LoginIP">
+            <summary>
+            最后登录IP
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.LoginDate">
+            <summary>
+            最后登录时间
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.DeptId">
+            <summary>
+            部门Id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.DeptName">
+            <summary>
+            拥有角色个数
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.RoleIds">
+            <summary>
+            角色id集合
+            </summary>
+        </member>
+        <member name="P:La.Model.System.SysUser.PostIds">
+            <summary>
+            岗位集合
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysUserPost">
+            <summary>
+            用户岗位
+            </summary>
+        </member>
+        <member name="T:La.Model.System.SysUserRole">
+            <summary>
+            用户角色关联表 用户N-1 角色
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.SYS_USER">
+            <summary>
+            平台内系统用户的唯一标志
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.NORMAL">
+            <summary>
+            正常状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.EXCEPTION">
+            <summary>
+            异常状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.USER_DISABLE">
+            <summary>
+            用户封禁状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.ROLE_DISABLE">
+            <summary>
+            角色封禁状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.DEPT_NORMAL">
+            <summary>
+            部门正常状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.DEPT_DISABLE">
+            <summary>
+            部门停用状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.DICT_NORMAL">
+            <summary>
+            字典正常状态
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.YES">
+            <summary>
+            是否为系统默认（是）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.YES_FRAME">
+            <summary>
+            是否菜单外链（是）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.NO_FRAME">
+            <summary>
+            是否菜单外链（否）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.TYPE_DIR">
+            <summary>
+            菜单类型（目录）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.TYPE_MENU">
+            <summary>
+            菜单类型（菜单）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.TYPE_BUTTON">
+            <summary>
+            菜单类型（按钮）
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.LAYOUT">
+            <summary>
+            Layout组件标识
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.PARENT_VIEW">
+            <summary>
+            ParentView组件标识
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.INNER_LINK">
+            <summary>
+            InnerLink组件标识
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.UNIQUE">
+            <summary>
+            校验返回结果码
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.HTTP">
+            <summary>
+            http请求
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.HTTPS">
+            <summary>
+            https请求
+            </summary>
+        </member>
+        <member name="F:La.Model.System.UserConstants.WWW">
+            <summary>
+            www主域
+            </summary>
+        </member>
+        <member name="T:La.Model.System.Vo.RouterVo">
+            <summary>
+            路由展示
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Vo.Meta.Title">
+            <summary>
+            设置该路由在侧边栏和面包屑中展示的名字
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Vo.Meta.Icon">
+            <summary>
+            设置该路由的图标，对应路径src/assets/icons/svg
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:La.Model.System.Vo.Meta.NoCache" -->
+        <member name="T:La.Model.System.Vo.TreeSelectVo">
+            <summary>
+            Treeselect树结构实体类
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Vo.TreeSelectVo.Id">
+            <summary>
+            节点Id
+            </summary>
+        </member>
+        <member name="P:La.Model.System.Vo.TreeSelectVo.Label">
+            <summary>
+            节点名称
+            </summary>
+        </member>
+        <member name="T:La.Model.Models.CommonLang">
+            <summary>
+            多语言配置，数据实体对象
+            </summary>
+        </member>
+        <member name="P:La.Model.Models.CommonLang.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:La.Model.Models.CommonLang.LangCode">
+            <summary>
+            语言code
+            </summary>
+        </member>
+        <member name="P:La.Model.Models.CommonLang.LangKey">
+            <summary>
+            语言key
+            </summary>
+        </member>
+        <member name="P:La.Model.Models.CommonLang.LangName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:La.Model.Models.CommonLang.Addtime">
+            <summary>
+            添加时间
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.ArticleCategoryDto">
+            <summary>
+            文章目录输入对象
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.ArticleCategoryQueryDto">
+            <summary>
+            文章目录查询对象
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.CommonLangDto">
+            <summary>
+            多语言配置输入对象
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.CommonLangQueryDto">
+            <summary>
+            多语言配置查询对象
+            </summary>
+        </member>
+    </members>
+</doc>

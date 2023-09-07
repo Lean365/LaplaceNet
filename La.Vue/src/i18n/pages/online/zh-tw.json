@@ -1,0 +1,20 @@
+{
+  "ponline": {
+    "reFresh": "刷新",
+    "userName": "使用者名",
+    "sessiOnnumber": "會話編號",
+    "loginLocation": "登錄地點",
+    "operatingSystem": "操作系統",
+    "LoginBrowser": "登錄瀏覽器",
+    "loginTime": "登錄時間",
+    "notificationContent": "請輸入內容'",
+    "send": "發送",
+    "cancel": "取消",
+    "empty": "消息內容不能為空",
+    "forceExit": "確認将'",
+    "user": "' 的使用者退出？",
+    "deleteMessage": "刪除成功",
+    "mesgTips": "向 '",
+    "mesguserTips": "' 發送消息"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "plang": {
+    "language": "语言",
+    "languageKey": "语言key",
+    "showWay": "显示方式",
+    "grid": "表格",
+    "transposing": "行列转置",
+    "simplified": "简体",
+    "traditional": "繁體",
+    "japanese": "日本語",
+    "korean": "韓国語",
+    "english": "英语",
+    "langKeycontent": "翻译key,eg:message.title,menu.title"
+  }
+}

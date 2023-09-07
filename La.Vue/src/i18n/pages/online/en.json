@@ -1,0 +1,20 @@
+{
+  "ponline": {
+    "reFresh": "refresh",
+    "userName": "username",
+    "sessiOnnumber": "session number",
+    "loginLocation": "login location",
+    "operatingSystem": "operating system",
+    "LoginBrowser": "Login Browser",
+    "loginTime": "login time",
+    "notificationContent": "Please enter the message",
+    "send": "send",
+    "cancel": "cancel",
+    "empty": "Message content cannot be empty",
+    "forceExit": "Do you confirm the forced exit of the '",
+    "user": "' User?",
+    "deleteMessage": "Delete successful",
+    "mesgTips": "Send a message to '",
+    "mesguserTips": "' "
+  }
+}

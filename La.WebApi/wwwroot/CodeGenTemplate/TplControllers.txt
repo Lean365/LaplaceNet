@@ -1,0 +1,248 @@
+using Microsoft.AspNetCore.Mvc;
+using ${options.BaseNamespace}Model.System;
+using ${options.DtosNamespace};
+using ${options.ModelsNamespace}.${options.SubNamespace};
+using ${options.IServicsNamespace}.${options.SubNamespace}.I${options.SubNamespace}Service;
+using ${options.ApiControllerNamespace}.Filters;
+$if(replaceDto.ShowBtnImport)
+using MiniExcelLibs;
+$end
+
+
+namespace ${options.ApiControllerNamespace}.Controllers
+{
+    /// <summary>
+    /// ${genTable.functionName}
+    /// API控制器Controller
+    /// @author ${replaceDto.Author}
+    /// @date ${replaceDto.AddTime}
+    /// </summary>
+    [Verify]
+    [Route("${genTable.ModuleName}/${genTable.BusinessName}")]
+    [Tags("${genTable.FunctionName}/${genTable.BusinessName}")]
+    [ApiExplorerSettings(GroupName = "${genTable.ModuleName}")]
+    public class ${replaceDto.ModelTypeName}Controller : BaseController
+    {
+        /// <summary>
+        /// ${genTable.FunctionName}接口
+        /// </summary>
+        private readonly I${replaceDto.ModelTypeName}Service _${replaceDto.ModelTypeName}Service;
+
+        public ${replaceDto.ModelTypeName}Controller(I${replaceDto.ModelTypeName}Service ${replaceDto.ModelTypeName}Service)
+        {
+            _${replaceDto.ModelTypeName}Service = ${replaceDto.ModelTypeName}Service;
+        }
+
+        /// <summary>
+        /// 查询${genTable.FunctionName}列表
+        /// </summary>
+        /// <param name="parm"></param>
+        /// <returns></returns>
+        [HttpGet("list")]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:list")]
+        public IActionResult Query${replaceDto.ModelTypeName}([FromQuery] ${replaceDto.ModelTypeName}QueryDto parm)
+        {
+            var response = _${replaceDto.ModelTypeName}Service.GetList(parm);
+            return SUCCESS(response);
+        }
+
+$if(genTable.TplCategory == "tree")
+        /// <summary>
+        /// 查询${genTable.FunctionName}列表树
+        /// </summary>
+        /// <param name="parm"></param>
+        /// <returns></returns>
+        [HttpGet("treeList")]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:list")]
+        public IActionResult QueryTree${replaceDto.ModelTypeName}([FromQuery] ${replaceDto.ModelTypeName}QueryDto parm)
+        {
+            var response = _${replaceDto.ModelTypeName}Service.GetTreeList(parm);
+            return SUCCESS(response);
+        }
+$end
+
+        /// <summary>
+        /// 查询${genTable.FunctionName}详情
+        /// </summary>
+        /// <param name="${replaceDto.PKName}"></param>
+        /// <returns></returns>
+        [HttpGet("{${replaceDto.PKName}}")]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:query")]
+        public IActionResult Get${replaceDto.ModelTypeName}(${replaceDto.PKType} ${replaceDto.PKName})
+        {
+            var response = _${replaceDto.ModelTypeName}Service.GetInfo(${replaceDto.PKName});
+            
+            var info = response.Adapt<${replaceDto.ModelTypeName}>();
+            return SUCCESS(info);
+        }
+
+$if(replaceDto.ShowBtnAdd)
+        /// <summary>
+        /// 添加${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:add")]
+        [Log(Title = "${genTable.FunctionName}", BusinessType = BusinessType.INSERT)]
+        public IActionResult Add${replaceDto.ModelTypeName}([FromBody] ${replaceDto.ModelTypeName}Dto parm)
+        {
+            if (parm == null)
+            {
+                throw new CustomException("请求参数错误(parameter error)");
+            }
+
+           // 校验输入项目唯一性
+
+            if (UserConstants.NOT_UNIQUE.Equals(_${replaceDto.ModelTypeName}Service.CheckEntryUnique(parm.${replaceDto.PKName}.ToString())))
+            {
+                return ToResponse(ApiResult.Error($"新增(New)${genTable.FunctionName} '{parm.${replaceDto.PKName}}'失败(failed)，输入的(The entered)${genTable.FunctionName}已存在(already exists)"));
+            }
+
+            var modal = parm.Adapt<${replaceDto.ModelTypeName}>().ToCreate(HttpContext);
+
+            var response = _${replaceDto.ModelTypeName}Service.Add${replaceDto.ModelTypeName}(modal);
+
+            return SUCCESS(response);
+        }
+$end
+
+$if(replaceDto.ShowBtnEdit)
+        /// <summary>
+        /// 更新${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        [HttpPut]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:edit")]
+        [Log(Title = "${genTable.FunctionName}", BusinessType = BusinessType.UPDATE)]
+        public IActionResult Update${replaceDto.ModelTypeName}([FromBody] ${replaceDto.ModelTypeName}Dto parm)
+        {
+            var modal = parm.Adapt<${replaceDto.ModelTypeName}>().ToUpdate(HttpContext);
+            var response = _${replaceDto.ModelTypeName}Service.Update${replaceDto.ModelTypeName}(modal);
+
+            return ToResponse(response);
+        }
+$end
+
+$if(replaceDto.ShowBtnDelete || replaceDto.ShowBtnMultiDel)
+        /// <summary>
+        /// 删除${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        [HttpDelete("{ids}")]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:delete")]
+        [Log(Title = "${genTable.FunctionName}", BusinessType = BusinessType.DELETE)]
+        public IActionResult Delete${replaceDto.ModelTypeName}(string ids)
+        {
+            //针对自增ID
+            //string[] idsArr = Tools.SpitIntArrary(ids);
+            //针对全局唯一标识符Guid
+            Guid[] idsArr = Tools.SpitGuidArrary(ids);
+            if (idsArr.Length <= 0) { return ToResponse(ApiResult.Error($"删除失败ID或Guid不能为空（Delete failed, ID or Guid cannot be empty)")); }
+
+            var response = _${replaceDto.ModelTypeName}Service.Delete(idsArr);
+
+            return ToResponse(response);
+        }
+$end
+
+$if(replaceDto.ShowBtnExport)
+        /// <summary>
+        /// 导出${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        [Log(Title = "${genTable.FunctionName}", BusinessType = BusinessType.EXPORT, IsSaveResponseData = false)]
+        [HttpGet("export")]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:export")]
+        public IActionResult Export([FromQuery] ${replaceDto.ModelTypeName}QueryDto parm)
+        {
+            parm.PageNum = 1;
+            parm.PageSize = 100000;
+            var list = _${replaceDto.ModelTypeName}Service.GetList(parm).Result;
+            if (list == null || list.Count <= 0)
+            {
+                return ToResponse(ResultCode.FAIL, "没有要导出的数据(No data)");
+            }
+            var result = ExportExcelMini(list, "${genTable.FunctionName}", "${genTable.FunctionName}");
+            return ExportExcel(result.Item2, result.Item1);
+        }
+$end
+
+$if(replaceDto.ShowBtnTruncate)
+        /// <summary>
+        /// 清空${genTable.FunctionName}
+        /// </summary>
+        /// <returns></returns>
+        [Log(Title = "${genTable.FunctionName}", BusinessType = BusinessType.CLEAN)]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:delete")]
+        [HttpDelete("clean")]
+        public IActionResult Clear()
+        {
+            if (!HttpContextExtension.IsAdmin(HttpContext))
+            {
+                return ToResponse(ResultCode.FAIL, "操作失败(The operation failed)");
+            }
+            return SUCCESS(_${replaceDto.ModelTypeName}Service.Truncate${replaceDto.ModelTypeName}());
+        }
+$end
+
+$if(replaceDto.ShowBtnImport)
+        /// <summary>
+        /// 导入
+        /// </summary>
+        /// <param name="formFile"></param>
+        /// <returns></returns>
+        [HttpPost("importData")]
+        [Log(Title = "${genTable.FunctionName}导入", BusinessType = BusinessType.IMPORT, IsSaveRequestData = false, IsSaveResponseData = true)]
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:import")]
+        public IActionResult ImportData([FromForm(Name = "file")] IFormFile formFile)
+        {
+            List<${replaceDto.ModelTypeName}> list = new();
+            using (var stream = formFile.OpenReadStream())
+            {
+                list = stream.Query<${replaceDto.ModelTypeName}>(startCell: "A1").ToList();
+            }
+
+            return SUCCESS(_${replaceDto.ModelTypeName}Service.Import${replaceDto.ModelTypeName}(list));
+        }
+
+        /// <summary>
+        /// ${genTable.FunctionName}导入模板下载
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("importTemplate")]
+        [Log(Title = "${genTable.FunctionName}模板", BusinessType = BusinessType.EXPORT, IsSaveRequestData = true, IsSaveResponseData = false)]
+        [AllowAnonymous]
+        public IActionResult ImportTemplateExcel()
+        {
+            var result = DownloadImportTemplate(new List<${replaceDto.ModelTypeName}ImportTmpl>() { }, "${replaceDto.ModelTypeName}Tmpl");
+            return ExportExcel(result.Item2, result.Item1);
+        }
+$end
+
+$if(showCustomInput)
+        /// <summary>
+        /// 保存排序
+        /// </summary>
+        /// <param name="id">主键</param>
+        /// <param name="value">排序值</param>
+        /// <returns></returns>
+        [ActionPermissionFilter(Permission = "${replaceDto.PermissionPrefix}:edit")]
+        [HttpGet("ChangeSort")]
+        [Log(Title = "保存排序", BusinessType = BusinessType.UPDATE)]
+        public IActionResult ChangeSort(int id = 0, int value = 0)
+        {
+            if (id <= 0) { return ToResponse(ApiResult.Error(101, "请求参数错误")); }
+            var response = _${replaceDto.ModelTypeName}Service.Update(w => w.${replaceDto.PKName} == id, it => new ${replaceDto.ModelTypeName}()
+            {
+$foreach(item in genTable.Columns)
+$if((item.htmlType == "customInput"))
+                $item.CsharpField = value,
+$end
+${end}
+            });
+            
+            return ToResponse(response);
+        }
+$end
+    }
+}

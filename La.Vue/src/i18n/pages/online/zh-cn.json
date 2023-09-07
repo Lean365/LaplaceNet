@@ -1,0 +1,20 @@
+{
+  "ponline": {
+    "reFresh": "刷新",
+    "userName": "用户名",
+    "sessiOnnumber": "会话编号",
+    "loginLocation": "登录地点",
+    "operatingSystem": "操作系统",
+    "LoginBrowser": "登录浏览器",
+    "loginTime": "登录时间",
+    "notificationContent": "请输入内容",
+    "send": "发送",
+    "cancel": "取消",
+    "empty": "消息内容不能为空",
+    "forceExit": "确认将 '",
+    "user": "' 用户退出?",
+    "deleteMessage": "删除成功",
+    "mesgTips": "向 '",
+    "mesguserTips": "' 发送消息"
+  }
+}

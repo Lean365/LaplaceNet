@@ -1,0 +1,35 @@
+{
+  "user": {
+    "personalInfo": "個人資訊",
+    "userName": "用戶名稱",
+    "phoneNumber": "手機號碼",
+    "userEmail": "用戶郵箱",
+    "department": "所屬部門",
+    "role": "所屬角色",
+    "registerTime": "創建日期",
+    "basicInfo": "基本資料",
+    "changePwd": "修改密碼",
+    "oldPwd": "舊密碼",
+    "newPwd": "新密碼",
+    "confirmPwd": "確認密碼",
+    "nickName": "用戶昵稱"
+  },
+  "puser": {
+    "deptName": "部門",
+    "userName": "用戶名稱",
+    "userMobile": "手機號碼",
+    "userStat": "状态",
+    "Createdate": "創建日",
+    "userID": "ID",
+    "userNick": "昵稱",
+    "Operation": "操作",
+    "sex": "性别",
+    "avatar": "頭像位址",
+    "email": "郵箱",
+    "loginDate": "最後登入日",
+    "loginPwd": "密碼",
+    "userPost": "崗位",
+    "userRole": "角色",
+    "memo": "備註"
+  }
+}

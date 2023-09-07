@@ -1,0 +1,35 @@
+{
+  "user": {
+    "phoneNumber": "携帯番号",
+    "registerTime": "作成日",
+    "department": "所属部署",
+    "personalInfo": "個人情報",
+    "role": "所属ロール",
+    "userEmail": "ユーザーメール",
+    "basicInfo": "基本資料",
+    "userName": "ユーザ名",
+    "changePwd": "パスワード変更",
+    "confirmPwd": "パスワード確定",
+    "newPwd": "新密碼",
+    "oldPwd": "旧密碼",
+    "nickName": "ニックネーム"
+  },
+  "puser": {
+    "deptName": "部門",
+    "userName": "ユーザー",
+    "userMobile": "携帯",
+    "userStat": "状態",
+    "Createdate": "作成日",
+    "userID": " ID",
+    "userNick": "ニックネーム",
+    "Operation": "操作",
+    "sex": "性别",
+    "avatar": "アバンタ",
+    "email": "メール",
+    "loginDate": "最終ログイン",
+    "loginPwd": "パスワード",
+    "userPost": "ポスト",
+    "userRole": "ロール",
+    "memo": "備考"
+  }
+}

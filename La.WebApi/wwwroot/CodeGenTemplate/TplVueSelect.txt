@@ -1,0 +1,258 @@
+﻿<!--
+ * @Descripttion: (${genTable.functionName}/${genTable.tableName})
+ * @version: (1.0)
+ * @Author: (${replaceDto.Author})
+ * @Date: (${replaceDto.AddTime})
+ * @LastEditors: (${replaceDto.Author})
+ * @LastEditTime: (${replaceDto.AddTime})
+-->
+<template>
+  <div class="app-container">
+    <!-- :model属性用于表单验证使用 比如下面的el-form-item 的 prop属性用于对表单值进行验证操作 -->
+    <el-form :model="queryParams" size="small" label-position="right" inline ref="queryForm" :label-width="labelWidth" v-show="showSearch" 
+      @submit.native.prevent>
+      ${replaceDto.VueQueryFormHtml}
+      <el-form-item>
+        <el-button type="primary" icon="el-icon-search" size="mini" @click="handleQuery">搜索</el-button>
+        <el-button icon="el-icon-refresh" size="mini" @click="resetQuery">重置</el-button>
+      </el-form-item>
+    </el-form>
+    <!-- 工具区域 -->
+    <el-row :gutter="10" class="mb8">
+      <el-col :span="1.5">
+        <el-button type="warning" plain icon="el-icon-download" size="mini" @click="handleExport" v-hasPermi="['${replaceDto.PermissionPrefix}:export']">导出</el-button>
+      </el-col>
+      <right-toolbar :showSearch.sync="showSearch" @queryTable="getList"></right-toolbar>
+    </el-row>
+
+    <!-- 数据区域 -->
+    <el-table :data="dataList" v-loading="loading" ref="table" border highlight-current-row @selection-change="handleSelectionChange">
+      <el-table-column type="selection" width="50" align="center"/>
+${replaceDto.VueViewListHtml}
+      <el-table-column label="操作" align="center" width="140">
+        <template slot-scope="scope">
+          <el-button size="mini" type="success" icon="el-icon-view" title="查看" 
+            @click="handleView(scope.row)"></el-button>      
+        </template>
+      </el-table-column>
+    </el-table>
+    <pagination class="mt10" background :total="total" :page.sync="queryParams.pageNum" :limit.sync="queryParams.pageSize" @pagination="getList" />
+
+    <!-- 添加或修改${genTable.functionName}对话框 -->
+    <el-dialog :lock-scroll="false" :visible.sync="open" >
+      <el-form ref="form" :model="form" label-position="left" :label-width="formLabelWidth">
+$foreach(item in genTable.Columns)
+        <el-form-item label="$if(item.ColumnComment == "")${item.CsharpField}${else}${item.ColumnComment}${end}">
+$if((item.HtmlType == "radio" || item.HtmlType == "select" || item.HtmlType == "checkbox"))
+          <dict-tag :options="${item.CsharpFieldFl}Options" :value="form.${item.CsharpFieldFl}" />
+$elseif(item.HtmlType == "imageUpload")
+          <el-image fit="contain" :src="form.${item.CsharpFieldFl}" :preview-src-list="[form.${item.CsharpFieldFl}]">
+            <div slot="error"><i class="el-icon-picture" /></div>
+          </el-image>
+$else
+          {{form.${item.CsharpFieldFl}}}
+$end
+        </el-form-item>
+$end
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="text" @click="cancel">取 消</el-button>
+      </div>
+    </el-dialog>
+  </div>
+</template>
+<script>
+import { 
+  list${genTable.BusinessName},
+  get${genTable.BusinessName},
+  export${genTable.BusinessName},
+} from '@/api/${tool.FirstLowerCase(genTable.ModuleName)}/${tool.FirstLowerCase(genTable.BusinessName)}.js';
+
+export default {
+  name: "${genTable.BusinessName.ToLower()}",
+  data() {
+    return {
+      labelWidth: "100px",
+      formLabelWidth:"100px",
+      // 选中${replaceDto.FistLowerPk}数组
+      ids: [],
+      // 非单个禁用
+      single: true,
+      // 非多个禁用
+      multiple: true,
+      // 遮罩层
+      loading: false,
+      // 显示搜索条件
+      showSearch: true,
+      // 查询参数
+      queryParams: {
+        pageNum: 1,
+        pageSize: 10,
+        sort: undefined,
+        sortType: undefined,
+$foreach(item in genTable.Columns)
+$if(item.IsQuery == true)
+        ${item.CsharpFieldFl}: undefined,
+$end
+$end
+      },
+      // 弹出层标题
+      title: "",
+      // 是否显示弹出层
+      open: false,
+      // 表单参数
+      form: {},
+      columns: [
+$set(index = 0)
+$foreach(column in genTable.Columns)
+        { index: $index, key: '${column.CsharpFieldFl}', label: `${column.ColumnComment}`, checked: $if(index < 9) true $else false $end },
+$set(index = index + 1)
+$end
+      ],
+$foreach(item in genTable.Columns)
+$if((item.HtmlType == "radio" || item.HtmlType == "select" || item.HtmlType == "checkbox"))
+      // ${item.ColumnComment}选项列表
+      ${item.CsharpFieldFl}Options: [],
+$elseif(item.HtmlType == "datetime" && item.IsQuery == true)
+      //${item.ColumnComment}时间范围
+      dateRange${item.CsharpField}: [],
+$end
+$end
+      // 数据列表
+      dataList: [],
+      // 总记录数
+      total: 0,
+      // 提交按钮是否显示
+      btnSubmitVisible: true,
+    };
+  },
+  created() {
+    // 列表数据查询
+    this.getList();
+
+$set(index = 0)
+    var dictParams = [
+$foreach(item in genTable.Columns)
+$if((item.HtmlType == "radio" || item.HtmlType == "select" || item.HtmlType == "checkbox") && item.DictType != "")
+      { dictType: "${item.DictType}", columnName: "${item.CsharpFieldFl}Options" },
+$set(index = index + 1)
+$end
+$end
+    ];
+$if(index > 0)
+    this.getDicts(dictParams).then((response) => {
+      response.data.forEach((element) => {
+        this[element.columnName] = element.list;
+      });
+    });
+$end
+  },
+  methods: {
+    // 查询数据
+    getList() {
+$foreach(item in genTable.Columns)
+$if(item.HtmlType == "datetime" && item.IsQuery == true)
+      this.addDateRange(this.queryParams, this.dateRange${item.CsharpField}, '${item.CsharpField}');
+$end
+$end
+      this.loading = true;
+      list${genTable.BusinessName}(this.queryParams).then(res => {
+         if (res.code == 200) {
+           this.dataList = res.data.result;
+           this.total = res.data.totalNum;
+           this.loading = false;
+         }
+       })
+    },
+    // 取消按钮
+    cancel() {
+      this.open = false;
+      this.reset();
+    },
+    // 重置数据表单
+    reset() {
+      this.form = {
+$foreach(item in genTable.Columns)
+$if(item.HtmlType == "checkbox")
+        ${item.CsharpFieldFl}Checked: [],
+$else
+        $item.CsharpFieldFl: undefined,
+$end
+$end
+      };
+      this.resetForm("form");
+    },
+    // 重置查询操作
+    resetQuery() {
+      this.timeRange = [];
+$foreach(item in genTable.Columns)
+$if(item.HtmlType == "datetime" && item.IsQuery == true)
+      //${item.ColumnComment}时间范围
+      this.dateRange${item.CsharpField}= [];
+$end
+$end
+      this.resetForm("queryForm");
+      this.handleQuery();
+    },
+    // 多选框选中数据
+    handleSelectionChange(selection) {
+      this.ids = selection.map((item) => item.${replaceDto.FistLowerPk});
+      this.single = selection.length != 1
+      this.multiple = !selection.length;
+    },
+    /** 搜索按钮操作 */
+    handleQuery() {
+      this.queryParams.pageNum = 1;
+      this.getList();
+    },
+    /** 删除按钮操作 */
+    handleDelete(row) {
+      const Ids = row.${replaceDto.FistLowerPk} || this.ids;
+
+      this.${confirm}confirm('是否确认删除参数编号为"' + Ids + '"的数据项？')
+        .then(function () {
+          return del${genTable.BusinessName}(Ids);
+        })
+        .then(() => {
+          this.handleQuery();
+          this.msgSuccess("删除成功");
+        })
+        .catch(() => {});
+    },
+    /** 预览按钮操作 */
+    handleView(row) {
+      this.reset();
+      const id = row.${replaceDto.FistLowerPk} || this.ids;
+      get${genTable.BusinessName}(id).then((res) => {
+        const { code, data } = res;
+        if (code == 200) {
+          this.open = true;
+          this.title = "修改数据";
+
+          this.form = {
+            ...data,
+$foreach(item in genTable.Columns)
+$if(item.HtmlType == "checkbox")
+            ${item.CsharpFieldFl}Checked: data.${item.CsharpFieldFl} ? data.${item.CsharpFieldFl}.split(',') : [],
+$end
+$end
+          };
+        }
+      });
+    },
+$if(replaceDto.ShowBtnExport)
+    /** 导出按钮操作 */
+    handleExport() {
+      const queryParams = this.queryParams;
+      this.${confirm}confirm("是否确认导出所有${genTable.functionName}数据项?", "警告", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning",
+      }).then(async () => {
+          await export${genTable.BusinessName}(queryParams);
+      })
+    },
+$end
+  },
+};
+</script>

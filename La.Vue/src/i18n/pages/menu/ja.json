@@ -1,0 +1,23 @@
+{
+  "pmenu": {
+    "menuName": "メニュー名",
+    "menuState": "テータス",
+    "icon": "Icon",
+    "menuid": "ID",
+    "menuType": "タイプ",
+    "sort": "ソート",
+    "authorityID": "権限",
+    "componentPath": "コンポーネント",
+    "isShow": "表示否",
+    "parentMenu": "親メニュー",
+    "directory": "ディレクトリ",
+    "menu": "メニュー",
+    "button": "ボタン",
+    "link": "リンク",
+    "isFrame": "外部ンク否",
+    "routePath": "ルーティングアドレス",
+    "permissionStr": "権限文字",
+    "isCache": "Cache否",
+    "menuNameKey": "メニュー名(key)"
+  }
+}

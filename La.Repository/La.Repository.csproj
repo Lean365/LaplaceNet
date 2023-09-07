@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\La.Infra\La.Infra.csproj" />
+		<ProjectReference Include="..\La.Model\La.Model.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Mapster" Version="7.3.0" />
+		<PackageReference Include="MySqlConnector" Version="2.2.6" />
+		<PackageReference Include="SqlSugar.IOC" Version="2.0.0" />
+		<PackageReference Include="SqlSugarCoreNoDrive" Version="5.1.4.98" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\CurdForm.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\CurdForm.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\QueryForm.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\QueryForm.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TableList.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TableList.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplControllers.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplControllers.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplDto.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplDto.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplIService.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplIService.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplModel.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplModel.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplRepository.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplRepository.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplService.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplService.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplTreeVue.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplTreeVue.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplVue.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplVue.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplVueApi.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplVueApi.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\TplVueSelect.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\TplVueSelect.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\app\\api.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\app\\api.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\app\\form.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\app\\form.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\app\\vue2.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\app\\vue2.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\sql\\MySqlTemplate.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\sql\\MySqlTemplate.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\sql\\Other.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\sql\\Other.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\sql\\PgSql.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\sql\\PgSql.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\sql\\SqlTemplate.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\sql\\SqlTemplate.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\v3\\TreeVue.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\v3\\TreeVue.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\v3\\Vue - 副本.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\v3\\Vue - 副本.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\CodeGenTemplate\\v3\\Vue.txt",
+      "PackagePath": "staticwebassets\\CodeGenTemplate\\v3\\Vue.txt"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\ImportTemplate\\InstInfoTmpl.xlsx",
+      "PackagePath": "staticwebassets\\ImportTemplate\\InstInfoTmpl.xlsx"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\ImportTemplate\\lang.xlsx",
+      "PackagePath": "staticwebassets\\ImportTemplate\\lang.xlsx"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\ImportTemplate\\user.xlsx",
+      "PackagePath": "staticwebassets\\ImportTemplate\\user.xlsx"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\data.xlsx",
+      "PackagePath": "staticwebassets\\data.xlsx"
+    },
+    {
+      "Id": "G:\\App Develop\\VS2023\\LaplaceNet\\La.WebApi\\wwwroot\\logo.txt",
+      "PackagePath": "staticwebassets\\logo.txt"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.La.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.La.WebApi.props",
+      "PackagePath": "build\\La.WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.La.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\La.WebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.La.WebApi.props",
+      "PackagePath": "buildTransitive\\La.WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

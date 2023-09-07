@@ -1,0 +1,82 @@
+.login {
+
+  //background: radial-gradient(220% 105% at top center, #1b2947 10%, #4b76a7 40%, #81acae 65%, #f7f7b6);
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //视频背景时启用margin
+  margin: -600px auto 3000px auto;
+  //particles动画粒子启用时使用height.
+  //height: 100%;
+  //background-image: url('@/assets/images/24542.jpg');
+  //background-video: url('@/assets/video/la.mp4');	
+  background-size: cover;
+}
+
+.title {
+  margin: 0px auto 15px auto;
+  text-align: center;
+  // color: #fff;
+}
+
+.login-form {
+
+  border-radius: 6px;
+  //background: #fff;
+  //浅黄
+  //background-color: hsla(120, 60%, 70%, 0.3);
+  //浅黄
+  background-color: hsla(205, 100%, 50%, 0.3);  
+  //width: var(--base-login-width);
+  padding: 25px 15px 5px 15px;
+  position: relative;
+
+  .input-icon {
+    height: 39px;
+    width: 14px;
+    margin-left: 0px;
+  }
+}
+
+.login-tip {
+  font-size: 13px;
+  text-align: center;
+  color: #bfbfbf;
+}
+
+.login-code {
+  width: 33%;
+  height: 40px;
+  float: right;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}
+
+.el-login-footer {
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.login-code-img {
+  height: 40px;
+  padding-left: 12px;
+}
+.langSet {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}

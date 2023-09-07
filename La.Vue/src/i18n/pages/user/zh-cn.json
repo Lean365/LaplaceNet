@@ -1,0 +1,35 @@
+{
+  "user": {
+    "personalInfo": "个人信息",
+    "userName": "用户名称",
+    "phoneNumber": "手机号码",
+    "userEmail": "用户邮箱",
+    "department": "所属部门",
+    "role": "所属角色",
+    "registerTime": "创建日期",
+    "basicInfo": "基本资料",
+    "changePwd": "修改密码",
+    "oldPwd": "旧密码",
+    "newPwd": "新密码",
+    "confirmPwd": "确认密码",
+    "nickName": "用户昵称"
+  },
+  "puser": {
+    "deptName": "部门",
+    "userName": "用户名称",
+    "userMobile": "手机号",
+    "userStat": "状态",
+    "Createdate": "创建日",
+    "userID": "ID",
+    "userNick": "昵称",
+    "Operation": "操作",
+    "sex": "性别",
+    "avatar": "头像地址",
+    "email": "用户邮箱",
+    "loginDate": "最后登录时间",
+    "loginPwd": "密码",
+    "userPost": "岗位",
+    "userRole": "角色",
+    "memo": "备注"
+  }
+}

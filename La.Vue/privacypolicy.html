@@ -1,0 +1,83 @@
+<template>
+  <div class="all">
+    <div class="title">
+      <i class="el-icon-arrow-left" @click="$router.go(-1)"></i>
+      <p class="a">健康告知</p>
+    </div>
+    <div class="partA">
+      <p class="a">
+        测试一级标题
+      </p>
+      <p class="b">
+        测试二级标题
+      </p>
+      <p>
+        为保证被保险人的保险权益在理赔时不受影响，请确认被保险人健康状况是否符合以下投保条件：
+        （以下情况全为“否”，即符合投保条件）
+      </p>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {}
+</script>
+
+<style lang="scss" scoped>
+  // 主标题字体大小为18px（绿），一级标题16px（绿），二级标题14px（黄），段落内容为标准12px
+  .all {
+    .title {
+      background-color: #fff;
+      position: relative;
+      padding-top: 20px;
+
+      i {
+        margin-left: 5px;
+        font-size: 25px;
+        color: #9a9a9a;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+
+      .a {
+        // 根据字数控制大小
+        font-size: 14px;
+        color: #00b052;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+
+    .partA {
+      margin-top: 10px;
+      background-color: #fff;
+      padding: 0 20px;
+      padding-top: 5px;
+      padding-bottom: 30px;
+
+      p {
+        text-indent: 2em;
+        margin: 3px 0;
+        font-size: 12px;
+      }
+
+      .a {
+        color: #00b052;
+        margin: 15px 0;
+        text-align: center;
+        font-size: 16px;
+        text-indent: -1em;
+        font-weight: 600;
+      }
+
+      .b {
+        color: #ff6600;
+        margin: 5px 0;
+        text-indent: -0.25em;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+  }
+</style>

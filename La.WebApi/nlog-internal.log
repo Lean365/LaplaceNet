@@ -1,0 +1,697 @@
+2023-09-05 08:36:39.0781 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 08:36:41.7777 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 08:36:43.2487 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 08:36:43.2507 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 08:36:43.2507 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 08:36:44.6405 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 08:36:44.6440 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 08:36:44.6440 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 08:36:44.6669 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 08:36:44.6839 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 08:36:44.7038 Info Configuration initialized.
+2023-09-05 08:46:19.1146 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 08:46:19.1352 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 08:46:19.1831 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 08:46:19.1831 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 08:46:19.1831 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 08:46:19.2024 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 08:46:19.2024 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 08:46:19.2024 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 08:46:19.2122 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 08:46:19.2122 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 08:46:19.2390 Info Configuration initialized.
+2023-09-05 08:47:15.4021 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 08:47:15.4242 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 08:47:15.4847 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 08:47:15.4847 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 08:47:15.4908 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 08:47:15.5099 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 08:47:15.5099 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 08:47:15.5099 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 08:47:15.5099 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 08:47:15.5316 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 08:47:15.5509 Info Configuration initialized.
+2023-09-05 08:49:49.9604 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 08:49:49.9854 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 08:49:50.0455 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 08:49:50.0455 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 08:49:50.0455 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 08:49:50.0547 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 08:49:50.0547 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 08:49:50.0547 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 08:49:50.0731 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 08:49:50.0731 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 08:49:50.1003 Info Configuration initialized.
+2023-09-05 08:51:25.7455 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 08:51:25.7649 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 08:51:25.8106 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 08:51:25.8106 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 08:51:25.8106 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 08:51:25.8291 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 08:51:25.8291 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 08:51:25.8291 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 08:51:25.8389 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 08:51:25.8389 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 08:51:25.8583 Info Configuration initialized.
+2023-09-05 11:35:36.0991 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 11:35:36.1223 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 11:35:36.1721 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 11:35:36.1721 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 11:35:36.1721 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 11:35:36.1941 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 11:35:36.1941 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 11:35:36.1941 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 11:35:36.1941 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 11:35:36.2097 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 11:35:36.2097 Info Configuration initialized.
+2023-09-05 11:36:23.0124 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 11:36:23.0358 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 11:36:23.0863 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 11:36:23.0863 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 11:36:23.0863 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 11:36:23.1048 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 11:36:23.1048 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 11:36:23.1048 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 11:36:23.1048 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 11:36:23.1200 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 11:36:23.1331 Info Configuration initialized.
+2023-09-05 11:44:20.6918 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 11:44:20.7220 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 11:44:20.7745 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 11:44:20.7745 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 11:44:20.7745 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 11:44:20.7877 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 11:44:20.8030 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 11:44:20.8030 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 11:44:20.8030 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 11:44:20.8189 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 11:44:20.8360 Info Configuration initialized.
+2023-09-05 11:45:26.5764 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 11:45:26.6279 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 11:45:26.7128 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 11:45:26.7128 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 11:45:26.7128 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 11:45:26.7661 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 11:45:26.7661 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 11:45:26.7661 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 11:45:26.7771 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 11:45:26.8225 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 11:45:26.8661 Info Configuration initialized.
+2023-09-05 11:52:32.6379 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 11:52:32.6647 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 11:52:32.7657 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 11:52:32.7657 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 11:52:32.7717 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 11:52:32.7922 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 11:52:32.7922 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 11:52:32.7922 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 11:52:32.7922 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 11:52:32.8120 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 11:52:32.8304 Info Configuration initialized.
+2023-09-05 11:58:45.8007 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 11:58:45.8235 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 11:58:45.8823 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 11:58:45.8823 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 11:58:45.8823 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 11:58:45.9015 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 11:58:45.9015 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 11:58:45.9015 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 11:58:45.9015 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 11:58:45.9197 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 11:58:45.9312 Info Configuration initialized.
+2023-09-05 12:08:27.5145 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 12:08:27.5500 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 12:08:27.6464 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 12:08:27.6481 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 12:08:27.6481 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 12:08:27.6858 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 12:08:27.6858 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 12:08:27.6858 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 12:08:27.7129 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 12:08:27.7296 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 12:08:27.7503 Info Configuration initialized.
+2023-09-05 12:10:08.7809 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 12:10:08.8059 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 12:10:08.8680 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 12:10:08.8680 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 12:10:08.8680 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 12:10:08.8953 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 12:10:08.8953 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 12:10:08.8953 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 12:10:08.9041 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 12:10:08.9169 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 12:10:08.9295 Info Configuration initialized.
+2023-09-05 13:26:57.2440 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 13:26:57.2704 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 13:26:57.3914 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 13:26:57.3914 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 13:26:57.3914 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 13:26:57.4275 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 13:26:57.4275 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 13:26:57.4275 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 13:26:57.4427 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 13:26:57.4553 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 13:26:58.1293 Info Configuration initialized.
+2023-09-05 13:38:07.0021 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 13:38:07.0257 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 13:38:07.0805 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 13:38:07.0805 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 13:38:07.0805 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 13:38:07.0900 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 13:38:07.0900 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 13:38:07.0900 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 13:38:07.1073 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 13:38:07.1073 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 13:38:07.1251 Info Configuration initialized.
+2023-09-05 13:47:25.8881 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 13:47:25.9076 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 13:47:25.9505 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 13:47:25.9505 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 13:47:25.9673 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 13:47:25.9673 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 13:47:25.9819 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 13:47:25.9819 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 13:47:25.9819 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 13:47:25.9819 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 13:47:26.0072 Info Configuration initialized.
+2023-09-05 13:49:14.6016 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 13:49:14.6247 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 13:49:14.6820 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 13:49:14.6841 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 13:49:14.6841 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 13:49:14.7055 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 13:49:14.7055 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 13:49:14.7055 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 13:49:14.7055 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 13:49:14.7247 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 13:49:14.7418 Info Configuration initialized.
+2023-09-05 14:05:06.2222 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 14:05:06.2467 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 14:05:06.3032 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 14:05:06.3032 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 14:05:06.3032 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 14:05:06.3129 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 14:05:06.3129 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 14:05:06.3129 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 14:05:06.3318 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 14:05:06.3318 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\ZrAdminNetCore\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 14:05:06.3529 Info Configuration initialized.
+2023-09-05 14:33:16.3068 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 14:33:18.9692 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 14:33:20.3412 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 14:33:20.3412 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 14:33:20.3534 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 14:33:21.6703 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 14:33:21.6703 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 14:33:21.6703 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 14:33:21.7186 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 14:33:21.7321 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 14:33:21.7513 Info Configuration initialized.
+2023-09-05 14:58:37.5986 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 14:58:37.6180 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 14:58:37.6622 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 14:58:37.6622 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 14:58:37.6622 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 14:58:37.6813 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 14:58:37.6813 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 14:58:37.6813 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 14:58:37.6813 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 14:58:37.6944 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 14:58:37.6944 Info Configuration initialized.
+2023-09-05 15:11:38.1261 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 15:11:38.1446 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 15:11:38.1781 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 15:11:38.1781 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 15:11:38.1781 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 15:11:38.1960 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 15:11:38.1960 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 15:11:38.1960 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 15:11:38.2133 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 15:11:38.2133 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 15:11:38.2325 Info Configuration initialized.
+2023-09-05 15:16:02.0098 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 15:16:02.0402 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 15:16:02.1072 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 15:16:02.1072 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 15:16:02.1072 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 15:16:02.1176 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 15:16:02.1176 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 15:16:02.1306 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 15:16:02.1306 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 15:16:02.1306 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 15:16:02.1614 Info Configuration initialized.
+2023-09-05 16:36:03.5200 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 16:36:03.5530 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 16:36:03.6415 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 16:36:03.6415 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 16:36:03.6464 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 16:36:03.6665 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 16:36:03.6665 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 16:36:03.6665 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 16:36:03.6665 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 16:36:03.6917 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 16:36:03.7087 Info Configuration initialized.
+2023-09-05 16:44:25.0336 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-05 16:44:25.0558 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-05 16:44:25.1007 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-05 16:44:25.1161 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-05 16:44:25.1161 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-05 16:44:25.1357 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-05 16:44:25.1357 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-05 16:44:25.1357 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-05 16:44:25.1357 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-05 16:44:25.1566 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-05 16:44:25.1844 Info Configuration initialized.
+2023-09-06 07:43:27.4769 Info FileTarget(Name=errorfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\error.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\error.20230905.000.txt
+2023-09-06 07:43:27.5889 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230905.000.txt
+2023-09-06 07:43:28.9746 Info FileTarget(Name=allfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\all.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\all.20230905.000.txt
+2023-09-06 07:54:08.5925 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 07:54:08.6134 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 07:54:08.6699 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 07:54:08.6699 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 07:54:08.6699 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 07:54:08.6910 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 07:54:08.6910 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 07:54:08.6910 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 07:54:08.6981 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 07:54:08.6981 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 07:54:08.7173 Info Configuration initialized.
+2023-09-06 08:07:55.6388 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 08:07:55.6643 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 08:07:55.7157 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 08:07:55.7157 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 08:07:55.7157 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 08:07:55.7344 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 08:07:55.7344 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 08:07:55.7344 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 08:07:55.7344 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 08:07:55.7494 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 08:07:55.7684 Info Configuration initialized.
+2023-09-06 09:00:30.5524 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 09:00:30.5737 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 09:00:30.6245 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 09:00:30.6245 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 09:00:30.6245 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 09:00:30.6342 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 09:00:30.6480 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 09:00:30.6480 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 09:00:30.6480 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 09:00:30.6480 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 09:00:30.6732 Info Configuration initialized.
+2023-09-06 09:01:15.6919 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 09:01:15.7256 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 09:01:15.8000 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 09:01:15.8000 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 09:01:15.8051 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 09:01:15.8269 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 09:01:15.8269 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 09:01:15.8269 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 09:01:15.8383 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 09:01:15.8383 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 09:01:15.8677 Info Configuration initialized.
+2023-09-06 09:09:08.2117 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 09:09:08.2394 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 09:09:08.3016 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 09:09:08.3016 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 09:09:08.3084 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 09:09:08.3227 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 09:09:08.3227 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 09:09:08.3227 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 09:09:08.3227 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 09:09:08.3227 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 09:09:08.3485 Info Configuration initialized.
+2023-09-06 09:19:31.4790 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 09:19:31.5189 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 09:19:31.6095 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 09:19:31.6095 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 09:19:31.6215 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 09:19:31.6638 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 09:19:31.6638 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 09:19:31.6638 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 09:19:31.6820 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 09:19:31.6954 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 09:19:31.7109 Info Configuration initialized.
+2023-09-06 09:21:05.8199 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 09:21:05.8400 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 09:21:05.8976 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 09:21:05.8976 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 09:21:05.8976 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 09:21:05.9230 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 09:21:05.9230 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 09:21:05.9230 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 09:21:05.9230 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 09:21:05.9429 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 09:21:05.9705 Info Configuration initialized.
+2023-09-06 10:06:53.2255 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 10:06:53.2523 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 10:06:53.3108 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 10:06:53.3108 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 10:06:53.3108 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 10:06:53.3363 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 10:06:53.3363 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 10:06:53.3363 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 10:06:53.3363 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 10:06:53.3566 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 10:06:53.3688 Info Configuration initialized.
+2023-09-06 10:14:06.5982 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 10:14:06.6214 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 10:14:06.6848 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 10:14:06.6848 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 10:14:06.6848 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 10:14:06.7130 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 10:14:06.7130 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 10:14:06.7130 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 10:14:06.7286 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 10:14:06.7461 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 10:14:06.7865 Info Configuration initialized.
+2023-09-06 10:53:26.8805 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 10:53:26.9073 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 10:53:26.9690 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 10:53:26.9706 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 10:53:26.9706 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 10:53:26.9952 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 10:53:26.9952 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 10:53:26.9952 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 10:53:27.0042 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 10:53:27.0042 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 10:53:27.0247 Info Configuration initialized.
+2023-09-06 10:56:13.2720 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 10:56:13.2907 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 10:56:13.3361 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 10:56:13.3361 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 10:56:13.3361 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 10:56:13.3552 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 10:56:13.3552 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 10:56:13.3552 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 10:56:13.3648 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 10:56:13.3648 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 10:56:13.3856 Info Configuration initialized.
+2023-09-06 11:02:14.8020 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 11:02:14.8328 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 11:02:14.9525 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 11:02:14.9592 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 11:02:14.9592 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 11:02:14.9735 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 11:02:14.9902 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 11:02:14.9902 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 11:02:14.9902 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 11:02:15.0167 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 11:02:15.0445 Info Configuration initialized.
+2023-09-06 11:02:58.6172 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 11:02:58.6364 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 11:02:58.6981 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 11:02:58.6981 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 11:02:58.6981 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 11:02:58.7273 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 11:02:58.7273 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 11:02:58.7273 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 11:02:58.7406 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 11:02:58.7406 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 11:02:58.7657 Info Configuration initialized.
+2023-09-06 11:03:16.6281 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 11:03:16.6565 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 11:03:16.7665 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 11:03:16.7721 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 11:03:16.7721 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 11:03:16.8093 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 11:03:16.8093 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 11:03:16.8093 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 11:03:16.8256 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 11:03:16.8566 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 11:03:16.8920 Info Configuration initialized.
+2023-09-06 11:40:25.9869 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 11:40:26.0180 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 11:40:26.0959 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 11:40:26.0959 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 11:40:26.0959 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 11:40:26.1190 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 11:40:26.1190 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 11:40:26.1224 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 11:40:26.1224 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 11:40:26.1437 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 11:40:26.1565 Info Configuration initialized.
+2023-09-06 11:42:49.2046 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.000.txt
+2023-09-06 11:42:51.2334 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.001.txt
+2023-09-06 11:42:52.5814 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.002.txt
+2023-09-06 11:42:54.9406 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.003.txt
+2023-09-06 11:42:56.6310 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.004.txt
+2023-09-06 11:42:58.6486 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.005.txt
+2023-09-06 11:43:00.4225 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.006.txt
+2023-09-06 11:43:02.6457 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.007.txt
+2023-09-06 11:43:04.7820 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.008.txt
+2023-09-06 11:43:06.4917 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.009.txt
+2023-09-06 11:43:08.6304 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.010.txt
+2023-09-06 11:43:10.4952 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.011.txt
+2023-09-06 11:43:12.5921 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.012.txt
+2023-09-06 11:43:14.1426 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.013.txt
+2023-09-06 11:43:16.3256 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.014.txt
+2023-09-06 11:43:18.5454 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.015.txt
+2023-09-06 11:43:20.1715 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.016.txt
+2023-09-06 11:43:22.3623 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.017.txt
+2023-09-06 11:43:24.0891 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.018.txt
+2023-09-06 11:43:26.2011 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.019.txt
+2023-09-06 11:43:27.8949 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.020.txt
+2023-09-06 11:43:30.2402 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.021.txt
+2023-09-06 11:43:32.0694 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.022.txt
+2023-09-06 11:43:34.4715 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.023.txt
+2023-09-06 11:43:36.6117 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.024.txt
+2023-09-06 11:43:38.4367 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.025.txt
+2023-09-06 11:43:40.7798 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.026.txt
+2023-09-06 11:43:42.5654 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.027.txt
+2023-09-06 11:43:44.8454 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.028.txt
+2023-09-06 11:43:46.6758 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230905.000.txt'.
+2023-09-06 11:43:46.6870 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.029.txt
+2023-09-06 11:43:48.7683 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.000.txt'.
+2023-09-06 11:43:48.7683 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.030.txt
+2023-09-06 11:43:51.0757 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.001.txt'.
+2023-09-06 11:43:51.0757 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.031.txt
+2023-09-06 11:43:52.8018 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.002.txt'.
+2023-09-06 11:43:52.8018 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.032.txt
+2023-09-06 11:43:54.9054 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.003.txt'.
+2023-09-06 11:43:54.9054 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.033.txt
+2023-09-06 11:43:56.6744 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.004.txt'.
+2023-09-06 11:43:56.6744 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.034.txt
+2023-09-06 11:43:58.9375 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.005.txt'.
+2023-09-06 11:43:58.9375 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.035.txt
+2023-09-06 11:44:00.7263 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.006.txt'.
+2023-09-06 11:44:00.7263 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.036.txt
+2023-09-06 11:44:02.9992 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.007.txt'.
+2023-09-06 11:44:02.9992 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.037.txt
+2023-09-06 11:44:04.7355 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.008.txt'.
+2023-09-06 11:44:04.7355 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.038.txt
+2023-09-06 11:44:06.9732 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.009.txt'.
+2023-09-06 11:44:06.9732 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.039.txt
+2023-09-06 11:44:09.1239 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.010.txt'.
+2023-09-06 11:44:09.1382 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.040.txt
+2023-09-06 11:44:10.8741 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.011.txt'.
+2023-09-06 11:44:10.8741 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.041.txt
+2023-09-06 11:44:13.0518 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.012.txt'.
+2023-09-06 11:44:13.0518 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.042.txt
+2023-09-06 11:44:14.9759 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.013.txt'.
+2023-09-06 11:44:14.9759 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.043.txt
+2023-09-06 11:44:17.2086 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.014.txt'.
+2023-09-06 11:44:17.2086 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.044.txt
+2023-09-06 11:44:18.8916 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.015.txt'.
+2023-09-06 11:44:18.8916 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.045.txt
+2023-09-06 11:44:21.0966 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.016.txt'.
+2023-09-06 11:44:21.0966 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.046.txt
+2023-09-06 11:44:23.5948 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.017.txt'.
+2023-09-06 11:44:23.5948 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.047.txt
+2023-09-06 11:44:25.1864 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.018.txt'.
+2023-09-06 11:44:25.1864 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.048.txt
+2023-09-06 11:44:27.3902 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.019.txt'.
+2023-09-06 11:44:27.3902 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.049.txt
+2023-09-06 11:44:29.1197 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.020.txt'.
+2023-09-06 11:44:29.1197 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.050.txt
+2023-09-06 11:44:31.2475 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.021.txt'.
+2023-09-06 11:44:31.2484 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.051.txt
+2023-09-06 11:44:33.0611 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.022.txt'.
+2023-09-06 11:44:33.0611 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.052.txt
+2023-09-06 11:44:35.6217 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.023.txt'.
+2023-09-06 11:44:35.6217 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.053.txt
+2023-09-06 11:44:37.5312 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.024.txt'.
+2023-09-06 11:44:37.5312 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.054.txt
+2023-09-06 11:44:39.7298 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.025.txt'.
+2023-09-06 11:44:39.7298 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.055.txt
+2023-09-06 11:44:42.2375 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.026.txt'.
+2023-09-06 11:44:42.2375 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.056.txt
+2023-09-06 11:44:44.1661 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.027.txt'.
+2023-09-06 11:44:44.1661 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.057.txt
+2023-09-06 11:44:46.3265 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.028.txt'.
+2023-09-06 11:44:46.3265 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.058.txt
+2023-09-06 11:44:48.3130 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.029.txt'.
+2023-09-06 11:44:48.3130 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.059.txt
+2023-09-06 11:44:50.4436 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.030.txt'.
+2023-09-06 11:44:50.4512 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.060.txt
+2023-09-06 11:44:52.5353 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.031.txt'.
+2023-09-06 11:44:52.5353 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.061.txt
+2023-09-06 11:44:54.0632 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.032.txt'.
+2023-09-06 11:44:54.0632 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.062.txt
+2023-09-06 11:44:56.1580 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.033.txt'.
+2023-09-06 11:44:56.1580 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.063.txt
+2023-09-06 11:44:58.5168 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.034.txt'.
+2023-09-06 11:44:58.5168 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.064.txt
+2023-09-06 11:45:00.7272 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.035.txt'.
+2023-09-06 11:45:00.7272 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.065.txt
+2023-09-06 11:45:02.4726 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.036.txt'.
+2023-09-06 11:45:02.4726 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.066.txt
+2023-09-06 11:45:04.7554 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.037.txt'.
+2023-09-06 11:45:04.7554 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.067.txt
+2023-09-06 11:45:06.8011 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.038.txt'.
+2023-09-06 11:45:06.8011 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.068.txt
+2023-09-06 11:45:09.2485 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.039.txt'.
+2023-09-06 11:45:09.2485 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.069.txt
+2023-09-06 11:45:11.0465 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.040.txt'.
+2023-09-06 11:45:11.0465 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.070.txt
+2023-09-06 11:45:13.3179 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.041.txt'.
+2023-09-06 11:45:13.3179 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.071.txt
+2023-09-06 11:45:15.5777 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.042.txt'.
+2023-09-06 11:45:15.5777 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.072.txt
+2023-09-06 11:45:17.3936 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.043.txt'.
+2023-09-06 11:45:17.3936 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.073.txt
+2023-09-06 11:45:19.6442 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.044.txt'.
+2023-09-06 11:45:19.6442 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.074.txt
+2023-09-06 11:45:21.4262 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.045.txt'.
+2023-09-06 11:45:21.4262 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.075.txt
+2023-09-06 11:45:23.6811 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.046.txt'.
+2023-09-06 11:45:23.6811 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.076.txt
+2023-09-06 11:45:25.5499 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.047.txt'.
+2023-09-06 11:45:25.5499 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.077.txt
+2023-09-06 11:45:27.7643 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.048.txt'.
+2023-09-06 11:45:27.7643 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.078.txt
+2023-09-06 11:45:30.0315 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.049.txt'.
+2023-09-06 11:45:30.0315 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.079.txt
+2023-09-06 11:45:32.3325 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.050.txt'.
+2023-09-06 11:45:32.3325 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.080.txt
+2023-09-06 11:45:34.9876 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.051.txt'.
+2023-09-06 11:45:34.9876 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.081.txt
+2023-09-06 11:45:40.1803 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.052.txt'.
+2023-09-06 11:45:40.1875 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.082.txt
+2023-09-06 14:19:37.4026 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 14:19:37.4437 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 14:19:37.5068 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 14:19:37.5068 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 14:19:37.5068 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 14:19:37.5344 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 14:19:37.5344 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 14:19:37.5344 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 14:19:37.5344 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 14:19:37.5611 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 14:19:37.5750 Info Configuration initialized.
+2023-09-06 15:20:04.9563 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 15:20:04.9797 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 15:20:05.0442 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 15:20:05.0442 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 15:20:05.0474 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 15:20:05.0724 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 15:20:05.0724 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 15:20:05.0724 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 15:20:05.0850 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 15:20:05.0988 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 15:20:05.1170 Info Configuration initialized.
+2023-09-06 15:27:55.4237 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.053.txt'.
+2023-09-06 15:27:55.4237 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.083.txt
+2023-09-06 15:35:29.3448 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 15:35:29.3683 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 15:35:29.4349 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 15:35:29.4349 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 15:35:29.4439 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 15:35:29.4688 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 15:35:29.4688 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 15:35:29.4688 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 15:35:29.4788 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 15:35:29.4788 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 15:35:29.5006 Info Configuration initialized.
+2023-09-06 15:35:55.4450 Info FileTarget(Name=allfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\all.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\all.20230906.000.txt
+2023-09-06 15:38:38.7622 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 15:38:38.8000 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 15:38:38.8901 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 15:38:38.8901 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 15:38:38.8963 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 15:38:38.9194 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 15:38:38.9194 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 15:38:38.9194 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 15:38:38.9311 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 15:38:38.9445 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 15:38:38.9629 Info Configuration initialized.
+2023-09-06 15:55:46.4799 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 15:55:46.5024 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 15:55:46.5681 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 15:55:46.5681 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 15:55:46.5738 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 15:55:46.5951 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 15:55:46.5951 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 15:55:46.5951 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 15:55:46.6065 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 15:55:46.6231 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 15:55:46.6415 Info Configuration initialized.
+2023-09-06 17:20:12.8710 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 17:20:12.9022 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 17:20:12.9807 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 17:20:12.9807 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 17:20:12.9807 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 17:20:13.0133 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 17:20:13.0133 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 17:20:13.0133 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 17:20:13.0247 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 17:20:13.0247 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 17:20:13.0554 Info Configuration initialized.
+2023-09-06 17:22:25.0021 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 17:22:25.0281 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 17:22:25.0962 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 17:22:25.0962 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 17:22:25.0962 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 17:22:25.1061 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 17:22:25.1061 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 17:22:25.1061 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 17:22:25.1238 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 17:22:25.1238 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 17:22:25.1433 Info Configuration initialized.
+2023-09-06 17:35:27.6274 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-06 17:35:27.6504 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-06 17:35:27.7332 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-06 17:35:27.7332 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-06 17:35:27.7332 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-06 17:35:27.7575 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-06 17:35:27.7575 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-06 17:35:27.7575 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-06 17:35:27.7678 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-06 17:35:27.7678 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-06 17:35:27.7909 Info Configuration initialized.
+2023-09-07 07:45:10.1287 Info FileTarget(Name=allfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\all.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\all.20230906.001.txt
+2023-09-07 07:45:10.1859 Info FileTarget(Name=sqlfile_wrapped): Deleting old archive file: 'G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.054.txt'.
+2023-09-07 07:45:10.1859 Info FileTarget(Name=sqlfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\admin-sql.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\admin-sql20230906.084.txt
+2023-09-07 08:32:39.5915 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-07 08:32:39.6125 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-07 08:32:39.6695 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-07 08:32:39.6695 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-07 08:32:39.6695 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-07 08:32:39.6779 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-07 08:32:39.6779 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-07 08:32:39.6779 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-07 08:32:39.6977 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-07 08:32:39.6977 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-07 08:32:39.7166 Info Configuration initialized.
+2023-09-07 08:37:49.6946 Info FileTarget(Name=errorfile_wrapped): Archiving G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\error.txt to G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\adminlogs\bak\error.20230906.000.txt
+2023-09-07 09:15:07.7881 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-07 09:15:07.8138 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-07 09:15:07.8770 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-07 09:15:07.8770 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-07 09:15:07.8770 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-07 09:15:07.8866 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-07 09:15:07.8993 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-07 09:15:07.8993 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-07 09:15:07.8993 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-07 09:15:07.9183 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-07 09:15:07.9352 Info Configuration initialized.
+2023-09-07 09:18:06.6198 Info Loading assembly name: NLog.Web.AspNetCore
+2023-09-07 09:18:06.6538 Info NLog.Web.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.3.940. Product version: 5.3.3+6abd01e8cac4db3d2fcdb282bb94b056bd8ff2de. GlobalAssemblyCache: False
+2023-09-07 09:18:06.7808 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=allfile)
+2023-09-07 09:18:06.7808 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=errorfile)
+2023-09-07 09:18:06.7928 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=sqlfile)
+2023-09-07 09:18:06.8291 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=consoleSql)
+2023-09-07 09:18:06.8291 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=console)
+2023-09-07 09:18:06.8291 Info Registered target NLog.Targets.Wrappers.AsyncTargetWrapper(Name=blackhole)
+2023-09-07 09:18:06.8411 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.3.1999. Product version: 5.2.3+a5ddef92a8afb22508450803e37c001f4a3ba52a. GlobalAssemblyCache: False
+2023-09-07 09:18:06.8411 Info Validating config: Targets=6, ConfigItems=148, FilePath=G:\App Develop\VS2023\LaplaceNet\La.WebApi\bin\Debug\net7.0\NLog.config
+2023-09-07 09:18:06.8879 Info Configuration initialized.

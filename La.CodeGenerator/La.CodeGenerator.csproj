@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\La.Infra\La.Infra.csproj" />
+		<ProjectReference Include="..\La.Common\La.Common.csproj" />
+		<ProjectReference Include="..\La.ServiceCore\La.ServiceCore.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JinianNet.JNTemplate" Version="2.3.3" />
+		<PackageReference Include="SqlSugarCoreNoDrive" Version="5.1.4.98" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿using La.Infra.Attribute;
+using ${options.ModelsNamespace}.${options.SubNamespace};
+
+namespace ${options.RepositoriesNamespace}
+{
+    /// <summary>
+    /// ${genTable.FunctionName}仓储
+    /// </summary>
+    [AppService(ServiceLifetime = LifeTime.Transient)]
+    public class ${replaceDto.ModelTypeName}Repository : BaseRepository<${replaceDto.ModelTypeName}>
+    {
+    }
+}

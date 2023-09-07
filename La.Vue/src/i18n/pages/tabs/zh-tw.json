@@ -1,0 +1,17 @@
+{
+  "ptabs": {
+    "basicInfo": "基本",
+    "Onboarding": "入職",
+    "qualifications": "學歷",
+    "annex": "附文",
+    "customization": "自定義",
+    "subInfo": "附屬",
+    "content": "内容",
+    "trade": "交易",
+    "bank": "银行",
+    "contact": "聯繫",
+    "purchase": "採購",
+    "warehouse": "庫存",
+    "accounting": "會計"
+  }
+}

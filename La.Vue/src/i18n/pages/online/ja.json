@@ -1,0 +1,20 @@
+{
+  "ponline": {
+    "reFresh": "リフレッシュ",
+    "userName": "ユーザー名",
+    "sessiOnnumber": "セッション番号",
+    "loginLocation": "ログイン場所",
+    "operatingSystem": "オペレーティングシステム",
+    "LoginBrowser": "ブラウザ",
+    "loginTime": "ログイン時刻",
+    "notificationContent": "メッセージを入力してください",
+    "send": "送信",
+    "cancel": "キャンセル",
+    "empty": "メッセージの内容を空にすることはできません",
+    "forceExit": "'",
+    "user": "' のユーザーは強制的に終了されますか?",
+    "deleteMessage": "削除完了しました",
+    "mesgTips": "'",
+    "mesguserTips": "' にメッセージを送信する"
+  }
+}

@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>La.Service</name>
+    </assembly>
+    <members>
+        <member name="T:La.Service.HelloService">
+            <summary>
+            注意：下面的AppService不要漏了
+            </summary>
+        </member>
+        <member name="F:La.Service.HelloService.userService">
+            <summary>
+            引用User服务
+            </summary>
+        </member>
+        <member name="M:La.Service.HelloService.#ctor(La.Service.System.IService.ISysUserService)">
+            <summary>
+            
+            </summary>
+            <param name="userService"></param>
+        </member>
+        <member name="M:La.Service.HelloService.SayHello(System.String)">
+            <summary>
+            数据库使用案例
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.IService.IHelloService">
+            <summary>
+            Hello接口
+            </summary>
+        </member>
+        <member name="M:La.Service.IService.IHelloService.SayHello(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.Office.InstInfoService">
+            <summary>
+            机构信息
+            Service业务层处理
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="M:La.Service.Office.InstInfoService.GetList(La.Model.Dto.InstInfoQueryDto)">
+            <summary>
+            查询机构信息列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.InstInfoService.CheckEntryUnique(System.String)">
+            <summary>
+            校验输入项目唯一性
+            </summary>
+            <param name="entryString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.InstInfoService.GetInfo(System.Guid)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="IiGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.InstInfoService.AddInstInfo(La.Model.Office.InstInfo)">
+            <summary>
+            添加机构信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.InstInfoService.UpdateInstInfo(La.Model.Office.InstInfo)">
+            <summary>
+            修改机构信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.InstInfoService.ImportInstInfo(System.Collections.Generic.List{La.Model.Office.InstInfo})">
+            <summary>
+            导入机构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.Office.IOfficeService.IInstInfoService">
+            <summary>
+            机构信息
+            service接口
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="M:La.Service.Office.IOfficeService.IInstInfoService.GetList(La.Model.Dto.InstInfoQueryDto)">
+            <summary>
+            机构信息
+            列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.IOfficeService.IInstInfoService.CheckEntryUnique(System.String)">
+            <summary>
+            校验输入项目唯一性
+            </summary>
+            <param name="entryString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.IOfficeService.IInstInfoService.GetInfo(System.Guid)">
+            <summary>
+            机构信息
+            详情
+            </summary>
+            <param name="IiGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.IOfficeService.IInstInfoService.AddInstInfo(La.Model.Office.InstInfo)">
+            <summary>
+            机构信息
+            新增
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.IOfficeService.IInstInfoService.UpdateInstInfo(La.Model.Office.InstInfo)">
+            <summary>
+            机构信息
+            修改编辑
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Office.IOfficeService.IInstInfoService.ImportInstInfo(System.Collections.Generic.List{La.Model.Office.InstInfo})">
+            <summary>
+            导入
+            机构信息
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.Production.IProductionService.IPpOrderService">
+            <summary>
+            生产工单
+            service接口
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="M:La.Service.Production.IProductionService.IPpOrderService.GetList(La.Model.Dto.PpOrderQueryDto)">
+            <summary>
+            生产工单
+            列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.IProductionService.IPpOrderService.CheckEntryUnique(System.String)">
+            <summary>
+            校验输入项目唯一性
+            </summary>
+            <param name="entryString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.IProductionService.IPpOrderService.GetInfo(System.Guid)">
+            <summary>
+            生产工单
+            详情
+            </summary>
+            <param name="MoGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.IProductionService.IPpOrderService.AddPpOrder(La.Model.Production.PpOrder)">
+            <summary>
+            生产工单
+            新增
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.IProductionService.IPpOrderService.UpdatePpOrder(La.Model.Production.PpOrder)">
+            <summary>
+            生产工单
+            修改编辑
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.IProductionService.IPpOrderService.ImportPpOrder(System.Collections.Generic.List{La.Model.Production.PpOrder})">
+            <summary>
+            导入
+            生产工单
+            </summary>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="T:La.Service.Production.PpOrderService">
+            <summary>
+            生产工单
+            Service业务层处理
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="M:La.Service.Production.PpOrderService.GetList(La.Model.Dto.PpOrderQueryDto)">
+            <summary>
+            查询生产工单列表
+            </summary>
+            <param name="parm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.PpOrderService.CheckEntryUnique(System.String)">
+            <summary>
+            校验输入项目唯一性
+            </summary>
+            <param name="entryString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.PpOrderService.GetInfo(System.Guid)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="MoGuid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.PpOrderService.AddPpOrder(La.Model.Production.PpOrder)">
+            <summary>
+            添加生产工单
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.PpOrderService.UpdatePpOrder(La.Model.Production.PpOrder)">
+            <summary>
+            修改生产工单
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:La.Service.Production.PpOrderService.ImportPpOrder(System.Collections.Generic.List{La.Model.Production.PpOrder})">
+            <summary>
+            导入生产工单
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

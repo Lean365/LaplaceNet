@@ -1,0 +1,10 @@
+﻿global using La.Common;
+global using Microsoft.AspNetCore.Authorization;
+global using La.Infra;
+global using La.Infra.Attribute;
+global using La.Infra.Enums;
+global using La.Infra.Model;
+global using Mapster;
+global using La.Infra.Extensions;
+global using La.Infra.Controllers;
+global using La.ServiceCore.Middleware;

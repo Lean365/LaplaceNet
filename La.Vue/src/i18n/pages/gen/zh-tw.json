@@ -1,0 +1,42 @@
+{
+  "gen": {
+    "selecttable": "請先選擇要生成代碼的資料表",
+    "Generatingcode": "正在生成代碼...",
+    "Customizedpath": "成功生成到自訂路徑",
+    "Codegenerationcompleted": "恭喜你，代碼生成完成！",
+    "ForcedSync": "確認要強制同步",
+    "TableStructure": "的表結構嗎？",
+    "Syncsuccess": "同步成功",
+    "completetable": "請先完成表格內容",
+    "Pleasewait": "請稍後...",
+    "Permanentlydeleted": "此操作將永久刪除該檔, 是否繼續?",
+    "Undeleted": "已取消刪除",
+    "CodePreview": "代碼預覽",
+    "basicInfo": "基本資訊",
+    "genInfo": "生成資訊",
+    "cloumInfo": "欄位資訊",
+    "Submit": "提交",
+    "Refresh": "刷新",
+    "Return": "返回",
+    "Verificationfailed": "表單校驗未通過，請重新檢查提交內容",
+    "Lastline": "最後一行了。",
+    "ImportTable": "導入表",
+    "DataBase": "資料庫",
+    "TableName": "表名",
+    "TableDescription": "表描述"
+  },
+  "pgen": {
+    "account": "賬號",
+    "password": "密碼",
+    "captcha": "驗證碼",
+    "btnLogin": "登錄",
+    "rememberMe": "記住密碼",
+    "loginSuccess": "登錄成功",
+    "loginTimeOut": "登錄狀態已過期，請重新登錄",
+    "reLogin": "重新登錄",
+    "invalidSession": "無效的會話，或者會話已過期，請重新登錄。",
+    "otherLoginWay": "其他登錄方式",
+    "register": "註冊",
+    "forgotPwd": "忘記密碼"
+  }
+}

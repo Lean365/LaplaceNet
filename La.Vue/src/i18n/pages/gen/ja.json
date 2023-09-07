@@ -1,0 +1,42 @@
+{
+  "gen": {
+    "selecttable": "まずコードを生成するデータテーブルを選択してください",
+    "Generatingcode": "コードを生成しています...",
+    "Customizedpath": "カスタムパスへの生成に成功しました",
+    "Codegenerationcompleted": "コード生成完了！",
+    "ForcedSync": "",
+    "TableStructure": "のテーブル構造を強制的に同期することを確認しますか？",
+    "Syncsuccess": "同期成功",
+    "completetable": "まず表の内容を完成してください",
+    "Pleasewait": "しばらくお待ちください...",
+    "Permanentlydeleted": "この操作はファイルを永久に削除します。続行しますか？",
+    "Undeleted": "削除がキャンセルされました",
+    "CodePreview": "コードプレビュー",
+    "basicInfo": "基本信息",
+    "genInfo": "基本情報",
+    "cloumInfo": "フィールド情報",
+    "Submit": "Submit",
+    "Refresh": "リフレッシュ",
+    "Return": "リターン",
+    "Verificationfailed": "フォームのチェックに失敗しました。送信内容を再チェックしてください",
+    "Lastline": "最後の行。",
+    "ImportTable": "インポートテーブル",
+    "DataBase": "データベース",
+    "TableName": "テーブル名",
+    "TableDescription": "表の説明"
+  },
+  "pgen": {
+    "account": "賬號",
+    "password": "密碼",
+    "captcha": "驗證碼",
+    "btnLogin": "登錄",
+    "rememberMe": "記住密碼",
+    "loginSuccess": "登錄成功",
+    "loginTimeOut": "登錄狀態已過期，請重新登錄",
+    "reLogin": "重新登錄",
+    "invalidSession": "無效的會話，或者會話已過期，請重新登錄。",
+    "otherLoginWay": "其他登錄方式",
+    "register": "註冊",
+    "forgotPwd": "忘記密碼"
+  }
+}

@@ -1,0 +1,47 @@
+// base color
+$blue: #324157;
+$light-blue: #3a71a8;
+$red: #c03639;
+$pink: #e65d6e;
+$green: #30b08f;
+$tiffany: #4ab7bd;
+$yellow: #fec171;
+$panGreen: #30b08f;
+
+// 默认菜单主题风格
+:root {
+  --base-text-color-rgba: rgba(0, 0, 0, 0.85);
+  --base-menu-background: #fff;
+  --base-sidebar-width: 220px;
+  // 左侧菜单宽度
+  --el-aside-width: 220px;
+  //底部高度
+  --base-footer-height: 30px;
+  --base-tags-height: 34px;
+  --base-header-height: 50px;
+  //登录框宽度
+  --base-login-width: 320px;
+}
+
+/***侧边栏深色配置***/
+[data-theme='theme-dark'] {
+  --base-menu-background: #324157;
+  --base-logo-title-color: #ffffff;
+  // // el-ement ui 设置
+  // --el-fill-color-blank: #304156;
+  --el-text-color-primary: #e5eaf3;
+  --el-menu-text-color: var(--el-text-color-primary);
+}
+html.dark {
+  /* custom dark bg color */
+  // --el-bg-color: #141414;
+  --base-color-white: #ffffff;
+  --base-text-color-rgba: #ffffff;
+  --base-menu-background: #000;
+}
+html.cafe {
+  filter: sepia(0.9) hue-rotate(315deg) brightness(0.9);
+}
+html.contrast {
+  filter: contrast(2);
+}

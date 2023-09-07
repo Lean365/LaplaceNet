@@ -1,0 +1,35 @@
+{
+  "user": {
+    "phoneNumber": "cellphone number",
+    "registerTime": "Date created",
+    "basicInfo": "basic information",
+    "department": "Department",
+    "personalInfo": "Personal information",
+    "role": "own role",
+    "userEmail": "User mailbox",
+    "userName": "user name",
+    "changePwd": "change Password",
+    "confirmPwd": "Confirm Password",
+    "newPwd": "new password",
+    "oldPwd": "Old Password",
+    "nickName": "User's Nickname"
+  },
+  "puser": {
+    "deptName": "Department",
+    " userName": "UserName",
+    "userMobile": "Phone",
+    "userStat": "Status",
+    "Createdate": "Createdate",
+    "userID": "ID",
+    "userNick": "Nickname",
+    "Operation": "Operation",
+    "sex": "Gender",
+    "avatar": "Avatar",
+    "email": "Mail",
+    "loginDate": "Lastlogin",
+    "loginPwd": "Password",
+    "userPost": "Post",
+    "userRole": "Role",
+    "memo": "Remark"
+  }
+}

@@ -1,0 +1,920 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>La.Model</name>
+    </assembly>
+    <members>
+        <member name="T:La.Model.Dto.InstInfoQueryDto">
+            <summary>
+            机构信息
+            查询对象
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.InstInfoDto">
+            <summary>
+            机构信息输入输出对象
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.PpOrderQueryDto">
+            <summary>
+            生产工单
+            查询对象
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="T:La.Model.Dto.PpOrderDto">
+            <summary>
+            生产工单输入输出对象
+            </summary>
+        </member>
+        <member name="T:La.Model.Office.InstInfo">
+            <summary>
+            机构信息
+            数据实体对象
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiGuid">
+            <summary>
+            描述 :Guid 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiLangkey">
+            <summary>
+            描述 :语言 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiInstCode">
+            <summary>
+            描述 :编号 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiCategory">
+            <summary>
+            描述 :类别 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiShortName">
+            <summary>
+            描述 :简称 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiFullName">
+            <summary>
+            描述 :全称 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiNature">
+            <summary>
+            描述 :性质 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiOuterPhone">
+            <summary>
+            描述 :外线 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiInnerPhone">
+            <summary>
+            描述 :内线 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiFax">
+            <summary>
+            描述 :传真 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiPostalcode">
+            <summary>
+            描述 :邮编 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiEmail">
+            <summary>
+            描述 :邮件 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiOrgCode">
+            <summary>
+            描述 :组织代码 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiCorporate">
+            <summary>
+            描述 :法人 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiRegionId">
+            <summary>
+            描述 :地区 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiProvinceId">
+            <summary>
+            描述 :省 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiCityId">
+            <summary>
+            描述 :市 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiCountyId">
+            <summary>
+            描述 :县/区 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiTownId">
+            <summary>
+            描述 :镇 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiVillageId">
+            <summary>
+            描述 :村 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiAddress">
+            <summary>
+            描述 :地址 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiEnAddress">
+            <summary>
+            描述 :英文地址 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiWebSite">
+            <summary>
+            描述 :网址 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiFoundedTime">
+            <summary>
+            描述 :成立日期 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiBusinessScope">
+            <summary>
+            描述 :经营范围 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiParentCorp">
+            <summary>
+            描述 :母公司 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiSortCode">
+            <summary>
+            描述 :排序 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiisEnabled">
+            <summary>
+            描述 :启用 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiSlogan">
+            <summary>
+            描述 :企业口号 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiLicenseAnnex">
+            <summary>
+            描述 :营业执照附件 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IiOtherAnnex">
+            <summary>
+            描述 :其它附件 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF01">
+            <summary>
+            描述 :自定义A 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF02">
+            <summary>
+            描述 :自定义B 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF03">
+            <summary>
+            描述 :自定义C 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF04">
+            <summary>
+            描述 :自定义D 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF05">
+            <summary>
+            描述 :自定义E 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF06">
+            <summary>
+            描述 :自定义F 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF51">
+            <summary>
+            描述 :自定义1 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF52">
+            <summary>
+            描述 :自定义2 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF53">
+            <summary>
+            描述 :自定义3 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF54">
+            <summary>
+            描述 :自定义4 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF55">
+            <summary>
+            描述 :自定义5 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UDF56">
+            <summary>
+            描述 :自定义6 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.ReMarks">
+            <summary>
+            描述 :备注 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.IsDeleted">
+            <summary>
+            描述 :软删除 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.CreateBy">
+            <summary>
+            描述 :创建者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.CreateTime">
+            <summary>
+            描述 :创建时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UpdateBy">
+            <summary>
+            描述 :更新者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfo.UpdateTime">
+            <summary>
+            描述 :更新时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="T:La.Model.Office.InstInfoImportTmpl">
+            <summary>
+            机构信息
+            数据实体模板对象导出
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiGuid">
+            <summary>
+            描述 :Guid 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiLangkey">
+            <summary>
+            描述 :语言 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiInstCode">
+            <summary>
+            描述 :编号 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiCategory">
+            <summary>
+            描述 :类别 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiShortName">
+            <summary>
+            描述 :简称 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiFullName">
+            <summary>
+            描述 :全称 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiNature">
+            <summary>
+            描述 :性质 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiOuterPhone">
+            <summary>
+            描述 :外线 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiInnerPhone">
+            <summary>
+            描述 :内线 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiFax">
+            <summary>
+            描述 :传真 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiPostalcode">
+            <summary>
+            描述 :邮编 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiEmail">
+            <summary>
+            描述 :邮件 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiOrgCode">
+            <summary>
+            描述 :组织代码 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiCorporate">
+            <summary>
+            描述 :法人 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiRegionId">
+            <summary>
+            描述 :地区 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiProvinceId">
+            <summary>
+            描述 :省 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiCityId">
+            <summary>
+            描述 :市 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiCountyId">
+            <summary>
+            描述 :县/区 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiTownId">
+            <summary>
+            描述 :镇 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiVillageId">
+            <summary>
+            描述 :村 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiAddress">
+            <summary>
+            描述 :地址 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiEnAddress">
+            <summary>
+            描述 :英文地址 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiWebSite">
+            <summary>
+            描述 :网址 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiFoundedTime">
+            <summary>
+            描述 :成立日期 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiBusinessScope">
+            <summary>
+            描述 :经营范围 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiParentCorp">
+            <summary>
+            描述 :母公司 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiSortCode">
+            <summary>
+            描述 :排序 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiisEnabled">
+            <summary>
+            描述 :启用 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiSlogan">
+            <summary>
+            描述 :企业口号 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiLicenseAnnex">
+            <summary>
+            描述 :营业执照附件 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IiOtherAnnex">
+            <summary>
+            描述 :其它附件 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF01">
+            <summary>
+            描述 :自定义A 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF02">
+            <summary>
+            描述 :自定义B 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF03">
+            <summary>
+            描述 :自定义C 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF04">
+            <summary>
+            描述 :自定义D 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF05">
+            <summary>
+            描述 :自定义E 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF06">
+            <summary>
+            描述 :自定义F 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF51">
+            <summary>
+            描述 :自定义1 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF52">
+            <summary>
+            描述 :自定义2 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF53">
+            <summary>
+            描述 :自定义3 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF54">
+            <summary>
+            描述 :自定义4 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF55">
+            <summary>
+            描述 :自定义5 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UDF56">
+            <summary>
+            描述 :自定义6 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.ReMarks">
+            <summary>
+            描述 :备注 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.IsDeleted">
+            <summary>
+            描述 :软删除 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.CreateBy">
+            <summary>
+            描述 :创建者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.CreateTime">
+            <summary>
+            描述 :创建时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UpdateBy">
+            <summary>
+            描述 :更新者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Office.InstInfoImportTmpl.UpdateTime">
+            <summary>
+            描述 :更新时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="T:La.Model.Production.PpOrder">
+            <summary>
+            生产工单
+            数据实体对象
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoGuid">
+            <summary>
+            描述 :Guid 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoPlant">
+            <summary>
+            描述 :生产工厂 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderType">
+            <summary>
+            描述 :订单类型 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderNo">
+            <summary>
+            描述 :生产订单 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderItem">
+            <summary>
+            描述 :物料 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderlot">
+            <summary>
+            描述 :批次 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderQty">
+            <summary>
+            描述 :工单数量 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderProQty">
+            <summary>
+            描述 :生产数量 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderDate">
+            <summary>
+            描述 :订单日期 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderRoute">
+            <summary>
+            描述 :工艺路线 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.MoOrderSerial">
+            <summary>
+            描述 :序列号 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.IsStatus">
+            <summary>
+            描述 :状态 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.IsDeleted">
+            <summary>
+            描述 :软删除 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.ReMarks">
+            <summary>
+            描述 :备注 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.CreateBy">
+            <summary>
+            描述 :创建者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.CreateTime">
+            <summary>
+            描述 :创建时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.UpdateBy">
+            <summary>
+            描述 :更新者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrder.UpdateTime">
+            <summary>
+            描述 :更新时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="T:La.Model.Production.PpOrderImportTmpl">
+            <summary>
+            生产工单
+            数据实体模板对象导出
+            @author Lean365
+            @date 2023-09-07
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoGuid">
+            <summary>
+            描述 :Guid 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoPlant">
+            <summary>
+            描述 :生产工厂 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderType">
+            <summary>
+            描述 :订单类型 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderNo">
+            <summary>
+            描述 :生产订单 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderItem">
+            <summary>
+            描述 :物料 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderlot">
+            <summary>
+            描述 :批次 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderQty">
+            <summary>
+            描述 :工单数量 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderProQty">
+            <summary>
+            描述 :生产数量 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderDate">
+            <summary>
+            描述 :订单日期 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderRoute">
+            <summary>
+            描述 :工艺路线 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.MoOrderSerial">
+            <summary>
+            描述 :序列号 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.IsStatus">
+            <summary>
+            描述 :状态 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.IsDeleted">
+            <summary>
+            描述 :软删除 
+            空值 :false 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.ReMarks">
+            <summary>
+            描述 :备注 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.CreateBy">
+            <summary>
+            描述 :创建者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.CreateTime">
+            <summary>
+            描述 :创建时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.UpdateBy">
+            <summary>
+            描述 :更新者 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="P:La.Model.Production.PpOrderImportTmpl.UpdateTime">
+            <summary>
+            描述 :更新时间 
+            空值 :true 
+            </summary>
+        </member>
+        <member name="T:La.Model.PagedInfo`1">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="P:La.Model.PagedInfo`1.PageSize">
+            <summary>
+            每页行数
+            </summary>
+        </member>
+        <member name="P:La.Model.PagedInfo`1.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:La.Model.PagedInfo`1.TotalNum">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:La.Model.PagedInfo`1.TotalPage">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:La.Model.PagerInfo.PageNum">
+            <summary>
+            当前页码
+            </summary>
+        </member>
+        <member name="P:La.Model.PagerInfo.PageSize">
+            <summary>
+            每页显示多少条
+            </summary>
+        </member>
+        <member name="P:La.Model.PagerInfo.TotalNum">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="P:La.Model.PagerInfo.Sort">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:La.Model.PagerInfo.SortType">
+            <summary>
+            排序类型,前端传入的是"ascending"，"descending"
+            </summary>
+        </member>
+    </members>
+</doc>
