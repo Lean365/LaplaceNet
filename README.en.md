@@ -29,28 +29,19 @@
 - Familiar with the Vue.js technology stack and have developed several real-world projects using it.
 - Students who want to advance and improve.
 - Zero-based, please move to izory: [ZR.Admin](https://gitee.com/izory).
-
-
-
-## 🌐Online
-- 😭pending... 
-
-
-
 ```
 Due to being a personal project, funds are limited!!!
 ```
 ## 💎Repositories
-| Repositories | Gitee | Github                                                                           |
-| ------------ | ----- | -------------------------------------------------------------------------------- |
-| Vue3         |       | [Clone/Download already included in Net7](https://github.com/Lean365/LaplaceNet) |
-| Net7         |       | [Clone/Download](https://github.com/Lean365/LaplaceNet)                          |
+| Repositories | Gitee                                                      | Github                                                  |
+| ------------ | ---------------------------------------------------------- | ------------------------------------------------------- |
+| LaplaceNet   | [Clone/Down](https://gitee.com/leansoft365/LaplaceNet.git) | [Clone/Down](https://github.com/Lean365/LaplaceNet.git) |
 
 ## 🍅Front-end
-- Core:vue3.x、vite、vuex、vue-router 、vue-cli 、axios、 element-plus、echats、i18n etc,using vscode tools.
+- Core:vue3.x + vite + vuex + vue-router + vue-cli + axios + element-plus + echats + i18n etc,using vscode tools.
 
 ## 🍆Back-end 
-- Core:.Net7.0 + Web API + sqlsugar + swagger + signalR + IpRateLimit + Quartz.net + Redis,using vs2022 tools.
+- Core:.Net7.0 + sqlsugar + swagger + signalR + IpRateLimit + Quartz.net + Redis,using vs2022 tools.
 
 ## ✨ LeanManufacturing Management
 1. Budget management

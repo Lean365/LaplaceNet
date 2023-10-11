@@ -29,27 +29,19 @@
 - 熟悉 Vue.js 技术栈，使用它开发过几个实际项目。
 - 对原理技术感兴趣，想进阶和提升的同学。
 - 零基础，请移步到izory：[ZR.Admin](https://gitee.com/izory)。
-
-
-
-## 🌐在线体验
-- 😭计划中...
-
-
-
 ```
 由于是个人项目，资金有限！！！
 ```
 ## 💎代码仓库
-| 仓库       | Gitee                                                      | Github                                                   |
-| ---------- | ---------------------------------------------------------- | -------------------------------------------------------- |
-| LaplaceNet | [gitee/下载](https://gitee.com/leansoft365/LaplaceNet.git) | [github/下载](https://github.com/Lean365/LaplaceNet.git) |
+| 仓库       | Gitee                                                      | Github                                                  |
+| ---------- | ---------------------------------------------------------- | ------------------------------------------------------- |
+| LaplaceNet | [Clone/下载](https://gitee.com/leansoft365/LaplaceNet.git) | [Clone/下载](https://github.com/Lean365/LaplaceNet.git) |
 
 ## 🍅前端
-- 核心框架 ：vue3.x、vuex、vue-router 、vue-cli 、axios、 element-plus、echats、i18n国际化等，前端采用vscode工具开发
+- 核心框架 ：vue3.x + vuex + vue-router + vue-cli + axios + element-plus + echats + i18n国际化等，前端采用vscode工具开发
 
 ## 🍆后端
-- 核心框架：.Net7.0 + Web API + sqlsugar + swagger + signalR + IpRateLimit + Quartz.net + Redis，前端采用vs2022工具开发
+- 核心框架：.Net7.0 + sqlsugar + swagger + signalR + IpRateLimit + Quartz.net + Redis，前端采用vs2022工具开发
 
 ## ✨精益生产管理
 1. 预算管理
