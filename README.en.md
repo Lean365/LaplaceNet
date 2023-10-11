@@ -33,9 +33,11 @@
 Due to being a personal project, funds are limited!!!
 ```
 ## 💎Repositories
-| Repositories | Gitee                                                      | Github                                                  |
-| ------------ | ---------------------------------------------------------- | ------------------------------------------------------- |
-| LaplaceNet   | [Clone/Down](https://gitee.com/leansoft365/LaplaceNet.git) | [Clone/Down](https://github.com/Lean365/LaplaceNet.git) |
+| Repositories | Gitee                                                   | Github                                               |
+| ------------ | ------------------------------------------------------- | ---------------------------------------------------- |
+| Laplace.Net  | [Clone/Down](https://gitee.com/leansoft365/LaplaceNet)  | [Clone/Down](https://github.com/Lean365/LaplaceNet)  |
+| Lean365.LPS  | [Clone/Down](https://gitee.com/leansoft365/Lean365.LPS) | [Clone/Down](https://github.com/Lean365/Lean365.LPS) |
+
 
 ## 🍅Front-end
 - Core:vue3.x + vite + vuex + vue-router + vue-cli + axios + element-plus + echats + i18n etc,using vscode tools.
